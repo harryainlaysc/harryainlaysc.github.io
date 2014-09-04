@@ -2,3 +2,9 @@ body {
     background-color: #ddd;
     
 }
+#logo {
+    position:fixed;
+    left: 90px;
+    top: 100px;
+}
+
