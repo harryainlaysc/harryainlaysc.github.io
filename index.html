@@ -2,31 +2,180 @@
 <html>
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
     
-    <img src="logo.png" alt="Home" width="271.333" height="60.333">
-    <body>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
+        
+    <style>
+    body{
+        margin:0;
+        background: white;
+    }
+    h1{
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-size: 50px;
+        font-weight: 300;
+    }
+   
+    #topbar {
+        
+        width: auto;
+        height: auto;
+        background-color: darkblue;
+        color: white;
+        
+    }
+        
+    #topbar p{
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        
+    }
+    #whitespace{
+        width: 100%;
+        height: 100px;
+        background-color:#1c1c1c;
+    }
+        
+    #navigationbar{
+        padding-left:0;
+        width: 100%;
+        height: 100%;
+        background-color: #2B60DE;
+        padding-right:0;
+        padding-top:100px;
+        padding-bottom:80px;
+        max-height: 2000px;
        
         
-        <div class="row">
-                <div class = "col-md-7">
-                    <div>
-                      <a href="http://www.mexico.com"><img src="logo.png"></a>
+    }
+    #adminbar{
+        padding-left:0;
+        width: 100%;
+        height: 100%;
+        background-color: #1c1c1c;
+        padding-right:0;
+        padding-top:40px;
+        padding-bottom:1000px;
+        max-height: 600px;
+    }
+                
+                
+    #stickyheader {
+        width: 100%;
+        height: 0px;
+        background: #2B60DE;
+    }
+    #stickyheader p{
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        
+    }
+    
+
+    
+    </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>
+        $(function(){
+        // Check the initial Poistion of the Sticky Header
+        var stickyHeaderTop = $('#stickyheader').offset().top;
+        $('#stickyheader').css('background-color', '#2B60DE');
+        $('#appearMenu').css('color', '#1c1c1c');
+        $(window).scroll(function(){
+                if( $(window).scrollTop() > stickyHeaderTop ) {
+                        $('#stickyheader').css({position: 'fixed', top: '0px'});
+                        $('#stickyheader').css('opacity', '0.98')
+                        $('#stickyheader').css('background-color', '#2B60DE')
+                        $('#stickyheader').css('height', '50px')
+                        $('#appearMenu').css('color', 'white');
+                        
+                } else {
+                        $('#stickyheader').css({position: 'static', top: '100px'});
+                        
+                        $('#stickyheader').css('background-color', '#2B60DE');
+                        $('#appearMenu').css('color', '#1c1c1c');
+                        $('#stickyheader').css('height', '0px')
+                        
+                }
+        });
+  });
+        </script>
+    </head>
+    
+    
+    <header>
+            
+    
+    
+    <div id="whitespace">
+        <a href="index.html"><img src="pageTopLogo.png" alt="Logo" width="300" height="70" /></a>
+        </div>
+    
+  
+    
+
+
+        
+    
+        
+    <div id="navigationbar">
+        <div class="container">
+            <p></p>
+            
+            <div align="center" class="row">
+                <div class = "col-md-4">
+                    <div class = "navicons">
+                        <a href="calendar.html"><img src="calendaricon.png" alt="Calendar" width="128" height="150" /></a>
                     </div>
-                    <div>
-                      <a href= "http://www.newyork.com"> <img src="logo.png"> </a>
+                    <p></p>
+                    <div class = "navicons">
+                        <a href= "graduation.html"> <img src="gradicon.png" alt="Graduation" width="128" height="150"/> </a>
                     </div>
                 </div>
-              
+                
+                <div class = "col-md-4">
+                    <div class = "navicons">
+                        <a href= "forms.html" > <img src="formsicon.png" alt="Forms" width="128" height="150"/> </a>
+                    </div>
+                    <p></p>
+                    <div class = "navicons">
+                        <a href="search.html"> <img src="searchicon.png" alt="Search" width="128" height="150"/> </a>
+                    </div>
+                </div> 
+                <div class = "col-md-4">
+                    <div class = "navicons">
+                        <a href= "clubs.html" > <img src="clubsicon.png" alt="Clubs" width="128" height="150"/> </a>
+                    </div>
+                    <p></p>
+                    <div class = "navicons">
+                        <a href="join.html"> <img src="joinicon.png" alt="Join Student Council" width="128" height="150"/> </a>
+                    </div>
+                </div> 
+                
+            </div>
         </div>
         
+    </div>   
+    
+    
+    </header>
+    <body>
+    
+ 
+ 
+  <div id="stickyheader">
+    <p id=appearMenu>Forms</p>
+  </div>
+    <div id="adminbar">
+        <h1> ADMINISTRATION </h1>
+    </div>
         
-        <p class = "scrolltoview"><center>Scroll Down to View Council</center> </p>
-        
-        
-        
-        <p class="bluebackground"><a href = "calendar.html">Calendar</a></p>
-        <p class="bluebackground"><a href = "testing.html">Testing</a></p>
-        <p class="bluebackground">Version: 0.2</p>
-        <iframe src="https://www.google.com/calendar/embed?src=rrs73ss0tqaje8vmh8gtptssj8%40group.calendar.google.com&ctz=America/Edmonton" style="border: 0" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+
+    
+    
     </body>
 </html>
-
