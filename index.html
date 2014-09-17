@@ -68,8 +68,8 @@
         height: 0px;
         background: #2B60DE;
     }
-    #stickyheader p{
-        color: white;
+    #appearMenu{
+        
         font-family: 'Lato', sans-serif;
         font-size: 14px;
         
@@ -83,22 +83,27 @@
         $(function(){
         // Check the initial Poistion of the Sticky Header
         var stickyHeaderTop = $('#stickyheader').offset().top;
-        $('#stickyheader').css('background-color', '#2B60DE');
-        $('#appearMenu').css('color', '#1c1c1c');
+        
+        
+        
+        $('#stickyheader').css('opacity', '0')
         $(window).scroll(function(){
-                if( $(window).scrollTop() > stickyHeaderTop ) {
+                if( $(window).scrollTop() > stickyHeaderTop - 70 ) {
                         $('#stickyheader').css({position: 'fixed', top: '0px'});
                         $('#stickyheader').css('opacity', '0.98')
                         $('#stickyheader').css('background-color', '#2B60DE')
                         $('#stickyheader').css('height', '50px')
                         $('#appearMenu').css('color', 'white');
                         
-                } else {
-                        $('#stickyheader').css({position: 'static', top: '100px'});
                         
-                        $('#stickyheader').css('background-color', '#2B60DE');
-                        $('#appearMenu').css('color', '#1c1c1c');
+                } else {
+                        
+                        
+                        
+                         
                         $('#stickyheader').css('height', '0px')
+                        $('#stickyheader').css('opacity', '0')
+                        
                         
                 }
         });
