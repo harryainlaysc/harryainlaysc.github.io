@@ -4,7 +4,7 @@
     
     <head>
         
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
@@ -73,6 +73,7 @@
         padding-bottom:1000px;
         max-height: 600px;
     }
+   
                 
                 
     #stickyheader {
@@ -109,6 +110,7 @@
     }
         
         
+        
     }
     
     @media (min-device-width: 701px){
@@ -124,6 +126,14 @@
             margin-bottom: 0px;
         
     }
+    #searchTitle{
+        color:#2B60DE;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        
+    }
+    
         
         
     }
@@ -141,6 +151,8 @@
         <script>
         $(function(){
         // Check the initial Poistion of the Sticky Header
+        
+            
         var stickyHeaderTop = $('#stickyheader').offset().top;
         
         
@@ -165,9 +177,28 @@
         });
   });
         </script>
+        
     </head>
     
+    <div data-role="page">			
+
+        <div data-role="panel" id="mypanel" data-theme="b" data-position-fixed="true" data-position="right" data-display="overlay">
+            <p id="searchTitle">SEARCH</p>
+                <div id="search"> 
+        <form class="ui-filterable">
+    <input id="inset-autocomplete-input" data-type="search" placeholder="Search cars...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input">
+    <li data-filtertext="Graduation"><a href="#">Graduation</a></li>
+    <li data-filtertext="Home"><a href="index.html">Home</a></li>
     
+
+</ul>
+
+</div>
+        
+        </div><!-- /panel -->
+
     <header>
             
     
@@ -188,7 +219,7 @@
             <p></p>
             
             <div align="center" class="navigationiconsfirstrow">
-                <a href="calendar.html"><img src="calendaricon.png" alt="Calendar" width="128" height="150" /></a>
+                <a href="#mypanel"><img src="calendaricon.png" alt="Calendar" width="128" height="150" /></a>
                 <a href="calendar.html"><img src="calendaricon.png" alt="Calendar" width="128" height="150" /></a>
                 <a href="calendar.html"><img src="calendaricon.png" alt="Calendar" width="128" height="150" /></a>
             
@@ -207,7 +238,11 @@
         </div>
         
     </div>   
+
     
+
+
+			
     
     </header>
     <body>
@@ -220,24 +255,10 @@
     <div id="adminbar">
         <h1> ADMINISTRATION </h1>
     </div>
-    
-        <form class="ui-filterable" abp="129">
-    <input id="rich-autocomplete-input" placeholder="Search ticker or firm name..." abp="130" data-type="search">
-</form>
-<ul abp="131" data-role="listview" data-inset="true" data-input="#rich-autocomplete-input" data-filter="true">
-    <li abp="132" data-filtertext="NASDAQ:ADBE Adobe Systems Incorporated"><a href="#" abp="133">Adobe</a></li>
-    <li abp="134" data-filtertext="NASDAQ:AMZNL Amazon.com, Inc."><a href="#" abp="135">Amazon</a></li>
-    <li abp="136" data-filtertext="NASDAQ:AAPL Apple Inc."><a href="#" abp="137">Apple</a></li>
-    <li abp="138" data-filtertext="NASDAQ:GOOG Google Inc."><a href="#" abp="139">Google</a></li>
-    <li abp="140" data-filtertext="NYSE:IBM Intl. International Business Machines Corp."><a href="#" abp="141">IBM</a></li>
-    <li abp="142" data-filtertext="NASDAQ:MSFT Microsoft Corporation"><a href="#" abp="143">Microsoft</a></li>
-    <li abp="144" data-filtertext="NASDAQ:YHOO Yahoo! Inc."><a href="#" abp="145">Yahoo</a></li>
-    <li abp="146" data-filtertext="USA U.S.A. United States of America"><a href="#" abp="147">United States</a></li>
-</ul>
 
-        
 
     
     
     </body>
+</div><!-- page -->
 </html>
