@@ -3,8 +3,13 @@
     
     
     <head>
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
         
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+        
+        <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
     <style>
     body{
         margin:0;
@@ -36,6 +41,7 @@
     #whitespace{
         width: 100%;
         height: 100px;
+        background: #262626
         
     }
     #whitespace img{
@@ -131,7 +137,7 @@
 
     
     </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        
         <script>
         $(function(){
         // Check the initial Poistion of the Sticky Header
@@ -166,11 +172,11 @@
             
     
     
-    <div id="whitespace">
+    
+    
+  <div id="whitespace">
         <a href="index.html"><img src="pageTopLogo.png" alt="Logo" width="300" height="70" /></a>
         </div>
-    
-  
     
 
 
@@ -214,6 +220,21 @@
     <div id="adminbar">
         <h1> ADMINISTRATION </h1>
     </div>
+    
+        <form class="ui-filterable" abp="129">
+    <input id="rich-autocomplete-input" placeholder="Search ticker or firm name..." abp="130" data-type="search">
+</form>
+<ul abp="131" data-role="listview" data-inset="true" data-input="#rich-autocomplete-input" data-filter="true">
+    <li abp="132" data-filtertext="NASDAQ:ADBE Adobe Systems Incorporated"><a href="#" abp="133">Adobe</a></li>
+    <li abp="134" data-filtertext="NASDAQ:AMZNL Amazon.com, Inc."><a href="#" abp="135">Amazon</a></li>
+    <li abp="136" data-filtertext="NASDAQ:AAPL Apple Inc."><a href="#" abp="137">Apple</a></li>
+    <li abp="138" data-filtertext="NASDAQ:GOOG Google Inc."><a href="#" abp="139">Google</a></li>
+    <li abp="140" data-filtertext="NYSE:IBM Intl. International Business Machines Corp."><a href="#" abp="141">IBM</a></li>
+    <li abp="142" data-filtertext="NASDAQ:MSFT Microsoft Corporation"><a href="#" abp="143">Microsoft</a></li>
+    <li abp="144" data-filtertext="NASDAQ:YHOO Yahoo! Inc."><a href="#" abp="145">Yahoo</a></li>
+    <li abp="146" data-filtertext="USA U.S.A. United States of America"><a href="#" abp="147">United States</a></li>
+</ul>
+
         
 
     
