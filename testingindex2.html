@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
     
     <head>
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
@@ -8,7 +8,7 @@
     <style>
     body{
         margin:0;
-        background: #1c1c1c;
+        background: white;
     }
     h1{
         color: white;
@@ -36,7 +36,7 @@
     #whitespace{
         width: 100%;
         height: 100px;
-        
+        background-color:darkblue;
     }
     #whitespace img{
         margin-left: auto;
@@ -49,7 +49,7 @@
         padding-left:0;
         width: 100%;
         height: 100%;
-        background-color: #2B60DE;
+        background-color: #1c1c1c;
         padding-right:0;
         padding-top:100px;
         padding-bottom:80px;
@@ -61,18 +61,29 @@
         padding-left:0;
         width: 100%;
         height: 100%;
-        background-color: #1c1c1c;
+        background-color: #3a3a3a   ;
         padding-right:0;
         padding-top:40px;
-        padding-bottom:1000px;
+        padding-bottom:500px;
         max-height: 600px;
     }
+    #crbar{
+        padding-left:0;
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+        padding-right:0;
+        padding-top:40px;
+        padding-bottom:500px;
+        max-height: 600px;
+    }
+        
                 
                 
     #stickyheader {
         width: 100%;
         height: 0px;
-        background: #2B60DE;
+        background: #1c1c1c;
     }
     #appearMenu{
         
@@ -144,7 +155,7 @@
                 if( $(window).scrollTop() > stickyHeaderTop - 70 ) {
                         $('#stickyheader').css({position: 'fixed', top: '0px'});
                         $('#stickyheader').css('opacity', '0.98')
-                        $('#stickyheader').css('background-color', '#2B60DE')
+                        $('#stickyheader').css('background-color', 'darkblue')
                         $('#stickyheader').css('height', '50px')
                         $('#appearMenu').css('color', 'white');
                         $('#appearMenu').css('font-size', '20px');
@@ -213,6 +224,9 @@
   </div>
     <div id="adminbar">
         <h1> ADMINISTRATION </h1>
+    </div>
+    <div id="crbar">
+        <h1> COMMUNITY RELATIONS </h1>
     </div>
         
 
