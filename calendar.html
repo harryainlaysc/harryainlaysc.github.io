@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
     
-    <img src="logo.png" alt="Home" width="271.333" height="60.333">
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+        <style>
+            body{
+                margin: 0;
+                
+            }
+            #titlebar{
+                background-color: #262626;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                
+            }
+            #title{
+                color: white;
+                font-family: 'Lato', sans-serif;
+                font-size: 50px;
+                font-weight: 300;
+            
+            }
+            #topline{
+                background-color: #2B60DE;
+                width: 100%;
+                height: 5px;
+            }
+            #bottomline{
+                background-color:#2B60DE;
+                width: 100%;
+                height: 5px;
+        
+        </style>
+    </head>
+    
+    <header>
+        <div id="topline"> .  </div>
+        <div id="titlebar"><h1 id="title">Calendar</h1></div>
+        <div id="bottomline"></div>
+    </header>
     <body>
        
-        
-        <div class="row">
-                <div class = "col-md-7">
-                    <div>
-                      <a href="http://www.mexico.com"><img src="logo.png"></a>
-                    </div>
-                    <div>
-                      <a href= "http://www.newyork.com"> <img src="logo.png"> </a>
-                    </div>
-                </div>
-              
-        </div>
-        
-        
-        <p class = "scrolltoview"><center>Scroll Down to View Council</center> </p>
+    
         
         
         
-        <p class="bluebackground"><a href = "calendar.html">Calendar</a></p>
-        <p class="bluebackground"><a href = "testing.html">Testing</a></p>
-        <p class="bluebackground">Version: 0.2</p>
-        <iframe src="https://www.google.com/calendar/embed?src=rrs73ss0tqaje8vmh8gtptssj8%40group.calendar.google.com&ctz=America/Edmonton" style="border: 0" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+        <iframe id="calendar"src="https://www.google.com/calendar/embed?src=rrs73ss0tqaje8vmh8gtptssj8%40group.calendar.google.com&ctz=America/Edmonton" style="border: 0" width="100%" height="500px" frameborder="0" scrolling="no"></iframe>
     </body>
 </html>
 

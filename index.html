@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
     
+    <title>Ainlay Student Council</title>
     <head>
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
         
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+        
+        <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
     <style>
     body{
         margin:0;
-        background: white;
+        background: #262626;
     }
     h1{
         color: white;
@@ -36,7 +41,8 @@
     #whitespace{
         width: 100%;
         height: 100px;
-        background-color:#1c1c1c;
+        background: #262626;
+        
     }
     #whitespace img{
         margin-left: auto;
@@ -44,13 +50,14 @@
         display: block;
     }
         
+        
     #navigationbar{
         padding-left:0;
         width: 100%;
-        height: 500px;
+        height: 100%;
         background-color: #2B60DE;
-        
-        padding-top:80px;
+        padding-right:0;
+        padding-top:100px;
         padding-bottom:80px;
         max-height: 2000px;
        
@@ -60,12 +67,13 @@
         padding-left:0;
         width: 100%;
         height: 100%;
-        background-color: #1c1c1c;
+        background-color: #262626;
         padding-right:0;
         padding-top:40px;
         padding-bottom:1000px;
         max-height: 600px;
     }
+   
                 
                 
     #stickyheader {
@@ -85,14 +93,66 @@
         margin-right: 50px;
        
     }
+       
+        
+    @media (max-device-width: 700px){
+        .navigationiconsfirstrow img {
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 30px;
+    }
+        .navigationiconssecondrow img {
+            margin-top: 30px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 0px;
+        
+    }
+        
+        
+        
+    }
+    
+    @media (min-device-width: 701px){
+        .navigationiconsfirstrow img {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 25x;
+    }
+        .navigationiconssecondrow img {
+            margin-top: 25px;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 0px;
+        
+    }
+    #searchTitle{
+        color:#2B60DE;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        
+    }
+    
+        
+        
+    }
+    
+        
+    
+    
+
+        
     
 
     
     </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        
         <script>
         $(function(){
         // Check the initial Poistion of the Sticky Header
+        
+            
         var stickyHeaderTop = $('#stickyheader').offset().top;
         
         
@@ -109,9 +169,6 @@
                         
                 } else {
                         
-                        
-                        
-                         
                         $('#stickyheader').css('height', '0px')
                         $('#stickyheader').css('opacity', '0')
                         
@@ -120,18 +177,40 @@
         });
   });
         </script>
+        
     </head>
     
+    <div data-role="page">			
+
+        <div data-role="panel" id="mypanel" data-theme="b" data-position-fixed="true" data-position="right" data-display="overlay">
+            <p id="searchTitle">SEARCH</p>
+                <div id="search"> 
+        <form class="ui-filterable">
+    <input id="inset-autocomplete-input" data-type="search" placeholder="Search Website">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input">
+    <li data-filtertext="Graduation"><a href="#">Graduation</a></li>
+    <li data-filtertext="Home"><a href="index.html">Home</a></li>
+    <li data-filtertext="Forms applications"><a href="#">Forms</a></li>
+    <li data-filtertext="apply join student council sc"><a href="#">Join Student Council</a></li>
+    <li data-filtertext="clubs join get involved dance computer science movie math me to we amnesty"><a href="#">Clubs</a></li>
+    <li data-filtertext="calendar dates events upcoming agenda"><a href="calendar.html">Calendar</a></li>
     
+</ul>
+
+</div>
+        
+        </div><!-- /panel -->
+
     <header>
             
     
     
-    <div id="whitespace">
+    
+    
+  <div id="whitespace">
         <a href="index.html"><img src="pageTopLogo.png" alt="Logo" width="300" height="70" /></a>
         </div>
-    
-  
     
 
 
@@ -142,41 +221,31 @@
         <div class="container">
             <p></p>
             
-            <div align="center" class="row">
-                <div class = "col-md-4">
-                    <div class = "navicons">
-                        <a href="calendar.html"><img src="calendaricon.png" alt="Calendar" width="128" height="150" /></a>
-                    </div>
-                    <p></p>
-                    <div class = "navicons">
-                        <a href= "graduation.html"> <img src="gradicon.png" alt="Graduation" width="128" height="150"/> </a>
-                    </div>
-                </div>
+            <div align="center" class="navigationiconsfirstrow">
+                <a href="calendar.html"><img src="calendaricon.png" alt="Calendar" width="128" height="150" /></a>
+                <a href="forms.html"><img src="formsicon.png" alt="Forms" width="128" height="150" /></a>
+                <a href="clubs.html"><img src="clubsicon.png" alt="Clubs" width="128" height="150" /></a>
+            
                 
-                <div class = "col-md-4">
-                    <div class = "navicons">
-                        <a href= "forms.html" > <img src="formsicon.png" alt="Forms" width="128" height="150"/> </a>
-                    </div>
-                    <p></p>
-                    <div class = "navicons">
-                        <a href="search.html"> <img src="searchicon.png" alt="Search" width="128" height="150"/> </a>
-                    </div>
-                </div> 
-                <div class = "col-md-4">
-                    <div class = "navicons">
-                        <a href= "clubs.html" > <img src="clubsicon.png" alt="Clubs" width="128" height="150"/> </a>
-                    </div>
-                    <p></p>
-                    <div class = "navicons">
-                        <a href="join.html"> <img src="joinicon.png" alt="Join Student Council" width="128" height="150"/> </a>
-                    </div>
-                </div> 
                 
             </div>
+            <div align="center" class="navigationiconssecondrow">
+                <a href="graduation.html"><img src="gradicon.png" alt="Grad" width="128" height="150" /></a>
+                <a href="#mypanel"><img src="searchicon.png" alt="Search" width="128" height="150" /></a>
+                <a href="join.html."><img src="joinicon.png" alt="Join Student Council" width="128" height="150" /></a>
+            
+                
+                
+            </div>
+            
         </div>
         
     </div>   
+
     
+
+
+			
     
     </header>
     <body>
@@ -189,9 +258,10 @@
     <div id="adminbar">
         <h1> ADMINISTRATION </h1>
     </div>
-        
+
 
     
     
     </body>
+</div><!-- page -->
 </html>
