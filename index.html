@@ -41,12 +41,16 @@
         
     }
     #whitespace{
+        opacity: 0;
         width: 100%;
         height: 100px;
         background: #262626;
+        -webkit-animation: fade 1s;
+        -webkit-animation-fill-mode: both;
         
     }
     #whitespace img{
+        
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -62,6 +66,8 @@
         padding-top:100px;
         padding-bottom:80px;
         max-height: 2000px;
+        -webkit-animation: fade 1s;
+        -webkit-animation-fill-mode: both;
        
         
     }
@@ -74,6 +80,7 @@
         padding-top:40px;
         padding-bottom:1000px;
         max-height: 600px;
+        
     }
    
                 
@@ -93,6 +100,7 @@
         padding-bottom: 25px;
         margin-left: 50px;
         margin-right: 50px;
+        
        
     }
        
@@ -134,30 +142,33 @@
         font-size: 20px;
         font-weight: 400;
         
-    }
-    
-        
         
     }
+    @-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+    }
+        
+   
+    100% {
+        opacity: 1;
+    }
+}
     
         
-    
-    
-
         
-    
-
+    }
     
     </style>
         
         <script>
+           
+        
         $(function(){
         // Check the initial Poistion of the Sticky Header
-        
+       
             
         var stickyHeaderTop = $('#stickyheader').offset().top;
-        
-        
         
         $('#stickyheader').css('opacity', '0')
         $(window).scroll(function(){
@@ -203,16 +214,21 @@
 </div>
         
         </div><!-- /panel -->
+        
+        <div data-role="panel" id="mypanel2" data-theme="a" data-position-fixed="true" data-position="left" data-display="overlay">
+            <p id="searchTitle">UPCOMING EVENTS</p>
+            
+            <a href="#" class="ui-btn ui-btn-b">View Full Calendar</a>
+            
+                
+        
+        </div><!-- /panel -->
 
     <header>
-            
-    
-    
-    
     
   <div id="whitespace">
         <a href="index.html"><img src="pageTopLogo.png" alt="Logo" width="300" height="70" /></a>
-        </div>
+  </div>
     
 
 
@@ -224,7 +240,7 @@
             <p></p>
             
             <div align="center" class="navigationiconsfirstrow">
-                <a href="calendar.html" rel="external"><img src="calendaricon.png" alt="Calendar" width="128" height="150" /></a>
+                <a href="#mypanel2" rel="external"><img src="calendaricon.png" alt="Calendar" width="128" height="150" /></a>
                 <a href="forms.html" rel="external"><img src="formsicon.png" alt="Forms" width="128" height="150" /></a>
                 <a href="clubs.html" rel="external"><img src="clubsicon.png" alt="Clubs" width="128" height="150" /></a>
             
@@ -256,6 +272,7 @@
  
   <div id="stickyheader">
     <p id=appearMenu>Forms</p>
+      
   </div>
     <div id="adminbar">
         <h1> ADMINISTRATION </h1>
