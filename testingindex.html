@@ -5,15 +5,17 @@
     <head>
         
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
         
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
         
         <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+        
     <style>
+    
     body{
         margin:0;
-        background: #262626;
+        
     }
     h1{
         color: white;
@@ -23,33 +25,75 @@
         font-weight: 300;
     }
    
-    #topbar {
-        
-        width: auto;
-        height: auto;
-        background-color: darkblue;
-        color: white;
-        
-    }
-        
-    #topbar p{
-        color: white;
-        font-family: 'Lato', sans-serif;
-        font-size: 14px;
-        
-    }
+
     #whitespace{
+        
         width: 100%;
-        height: 100px;
+        height: 60px;
         background: #262626;
+        position: fixed;
+        
+        
+        
         
     }
-    #whitespace img{
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
+    
         
+    #leftsection{
+        
+        position: absolute;
+        padding: 10px;
+        margin: 0;
+        top: 15%;
+        left: 0%;
+        
+        
+        
+       
+        
+    }
+    #rightsection{
+        position:absolute;
+        padding: 10px; 
+        margin: 0;
+        top: 15%;
+        right: 0%;
+        float:right;
+       
+    }
+    #whitespace li{
+        
+        display:inline;
+        
+        
+        
+        
+        
+    }
+    #nonicon{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 300;
+        color: white;
+        text-shadow: -1px 0 #262626, 0 1px #262626, 1px 0 #262626, 0 -1px #262626;
+        text-decoration: none;
+       
+        
+    }
+    #mainlogo{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -35px;
+        margin-left: -150px;
+       
+        
+    }
+   
+    div#main-content { display: none; }    
         
     #navigationbar{
         padding-left:0;
@@ -57,9 +101,10 @@
         height: 100%;
         background-color: #2B60DE;
         padding-right:0;
-        padding-top:100px;
+        padding-top:160px;
         padding-bottom:80px;
         max-height: 2000px;
+        
        
         
     }
@@ -72,6 +117,7 @@
         padding-top:40px;
         padding-bottom:1000px;
         max-height: 600px;
+        
     }
    
                 
@@ -82,7 +128,7 @@
         background: #2B60DE;
     }
     #appearMenu{
-        
+        margin: 5px;
         font-family: 'Lato', sans-serif;
         font-size: 0px;
         
@@ -91,6 +137,7 @@
         padding-bottom: 25px;
         margin-left: 50px;
         margin-right: 50px;
+        
        
     }
        
@@ -130,56 +177,55 @@
         color:#2B60DE;
         font-family: 'Lato', sans-serif;
         font-size: 20px;
+        font-weight: 700;
+        
+        
+    }
+    #footerText{
+        color:black;
+        color:#2B60DE;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
         font-weight: 400;
-        
     }
-    
-        
-        
+    #join:hover{
+        opacity: 0.75;
     }
-    
+    #graduation:hover{
+        opacity: 0.75;
+    }
+    #search:hover{
+        opacity: 0.75;
+    }
+    #calendar:hover{
+        opacity: 0.75;
+    }
+    #clubs:hover{
+        opacity: 0.75;
+    }
+    #forms:hover{
+        opacity: 0.75;
+    }
         
-    
     
 
-        
     
-
+        
+        
+    }
     
     </style>
         
         <script>
-        $(function(){
-        // Check the initial Poistion of the Sticky Header
+        $(document).ready(function() {
+    $('#main-content').fadeIn();
+});   
         
-            
-        var stickyHeaderTop = $('#stickyheader').offset().top;
-        
-        
-        
-        $('#stickyheader').css('opacity', '0')
-        $(window).scroll(function(){
-                if( $(window).scrollTop() > stickyHeaderTop - 70 ) {
-                        $('#stickyheader').css({position: 'fixed', top: '0px'});
-                        $('#stickyheader').css('opacity', '0.98')
-                        $('#stickyheader').css('background-color', '#2B60DE')
-                        $('#stickyheader').css('height', '50px')
-                        $('#appearMenu').css('color', 'white');
-                        $('#appearMenu').css('font-size', '20px');
-                        
-                } else {
-                        
-                        $('#stickyheader').css('height', '0px')
-                        $('#stickyheader').css('opacity', '0')
-                        
-                        
-                }
-        });
-  });
+ 
         </script>
         
     </head>
-    
+    <div id="main-content">
     <div data-role="page">			
 
         <div data-role="panel" id="mypanel" data-theme="b" data-position-fixed="true" data-position="right" data-display="overlay">
@@ -189,11 +235,11 @@
     <input id="inset-autocomplete-input" data-type="search" placeholder="Search Website">
 </form>
 <ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input">
-    <li data-filtertext="Graduation"><a href="#">Graduation</a></li>
+    <li data-filtertext="Graduation"><a href="graduation.html">Graduation</a></li>
     <li data-filtertext="Home"><a href="index.html">Home</a></li>
-    <li data-filtertext="Forms applications"><a href="#">Forms</a></li>
+    <li data-filtertext="Forms applications"><a href="forms.html">Forms</a></li>
     <li data-filtertext="apply join student council sc"><a href="#">Join Student Council</a></li>
-    <li data-filtertext="clubs join get involved dance computer science movie math me to we amnesty"><a href="#">Clubs</a></li>
+    <li data-filtertext="clubs join get involved dance computer science movie math me to we amnesty"><a href="clubs.html" rel="external">Clubs</a></li>
     <li data-filtertext="calendar dates events upcoming agenda"><a href="calendar.html">Calendar</a></li>
     
 </ul>
@@ -201,16 +247,39 @@
 </div>
         
         </div><!-- /panel -->
+        
+        <div data-role="panel" id="mypanel2" data-theme="a" data-position-fixed="true" data-position="left" data-display="overlay">
+            <p id="searchTitle">UPCOMING EVENTS</p>
+            
+            <a href="#" class="ui-btn ui-btn-b">View Full Calendar</a>
+            
+                
+        
+        </div><!-- /panel -->
 
     <header>
-            
-    
-    
-    
     
   <div id="whitespace">
-        <a href="index.html"><img src="pageTopLogo.png" alt="Logo" width="300" height="70" /></a>
-        </div>
+      
+      <ul id="leftsection">
+  <li><a id="nonicon">CALENDAR</a></li>
+  <li><a id="nonicon">FORMS</a></li>
+  <li><a id="nonicon">CLUBS</a></li>
+          </ul>
+      
+<div id="headerlogo"><img id="mainlogo"src="pageTopLogo.png" width="300" height="70"></div>
+      
+      <ul id="rightsection">
+  
+  <li><a id="nonicon">GRADUATION</a></li>
+  <li><a id="nonicon">JOIN</a></li>
+  <li><a id="nonicon">SEARCH</a></li>
+      </ul>
+      
+      
+    
+            
+  </div>
     
 
 
@@ -222,17 +291,17 @@
             <p></p>
             
             <div align="center" class="navigationiconsfirstrow">
-                <a href="calendar.html"><img src="calendaricon.png" alt="Calendar" width="128" height="150" /></a>
-                <a href="forms.html"><img src="formsicon.png" alt="Forms" width="128" height="150" /></a>
-                <a href="clubs.html"><img src="clubsicon.png" alt="Clubs" width="128" height="150" /></a>
+                <a href="#mypanel2" id="calendar" rel="external"><img src="calendaricon.png" alt="Calendar" width="128" height="150" /></a>
+                <a href="forms.html" id="forms" rel="external"><img src="formsicon.png" alt="Forms" width="128" height="150" /></a>
+                <a href="clubs.html" id="clubs" rel="external"><img src="clubsicon.png" alt="Clubs" width="128" height="150" /></a>
             
                 
                 
             </div>
             <div align="center" class="navigationiconssecondrow">
-                <a href="graduation.html"><img src="gradicon.png" alt="Grad" width="128" height="150" /></a>
-                <a href="#mypanel"><img src="searchicon.png" alt="Search" width="128" height="150" /></a>
-                <a href="join.html."><img src="joinicon.png" alt="Join Student Council" width="128" height="150" /></a>
+                <a href="graduation.html" id="graduation" rel="external"><img src="gradicon.png" alt="Grad" width="128" height="150" /></a>
+                <a href="#mypanel" id="search" rel="external"><img src="searchicon.png" alt="Search" width="128" height="150" /></a>
+                <a href="join.html." id="join" rel="external"><img src="joinicon.png" alt="Join Student Council" width="128" height="150" /></a>
             
                 
                 
@@ -254,14 +323,18 @@
  
   <div id="stickyheader">
     <p id=appearMenu>Forms</p>
+      
   </div>
     <div id="adminbar">
         <h1> ADMINISTRATION </h1>
     </div>
-
+    <div data-role="footer" data-position="static">
+	<h1 id="footerText">Harry Ainlay High School - Student Council</h1>
+</div>
 
     
     
     </body>
 </div><!-- page -->
+        </div>
 </html>
