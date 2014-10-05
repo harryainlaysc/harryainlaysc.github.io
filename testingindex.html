@@ -15,7 +15,7 @@
     
     body{
         margin:0;
-        background: #262626;
+        background: white;
         
     }
     h1{
@@ -31,7 +31,7 @@
         
         width: 100%;
         height: 60px;
-        background: #262626;
+        background: #2B60DE;
         position: fixed;
         
         
@@ -76,7 +76,7 @@
         padding-left:0;
         width: 100%;
         height: 100%;
-        background-color: #262626;
+        background-color: white;
         padding-right:0;
         padding-top:40px;
         padding-bottom:1000px;
@@ -104,6 +104,13 @@
         
        
     }
+    #viewfullcalendar{
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-size: 14px;
+        font-weight: 500;
+    }
        
         
     @media (max-device-width: 700px){
@@ -119,6 +126,18 @@
             margin-bottom: 0px;
         
     }
+          #whitespace{
+        
+        width: 100%;
+        height: 20%;
+        background: #262626;
+        position: fixed;
+        
+        
+        
+        
+    }
+        
         
         
         
@@ -177,7 +196,7 @@
         font-size: 16px;
         font-weight: 300;
         color: white;
-        text-shadow: -1px 0 #262626, 0 1px #262626, 1px 0 #262626, 0 -1px #262626;
+        text-shadow: -1px 0 #2B60DE, 0 1px #2B60DE, 1px 0 #2B60DE, 0 -1px #2B60DE;
         text-decoration: none;
        
         
@@ -261,7 +280,7 @@
         <div data-role="panel" id="mypanel2" data-theme="a" data-position-fixed="true" data-position="left" data-display="overlay">
             <p id="searchTitle">UPCOMING EVENTS</p>
             
-            <a href="#" class="ui-btn ui-btn-b">View Full Calendar</a>
+            <a href="#" id="viewfullcalendar" class="ui-btn ui-btn-b">VIEW FULL CALENDAR</a>
             
                 
         
@@ -272,18 +291,18 @@
   <div id="whitespace">
       
       <ul id="leftsection">
-  <li><a id="nonicon">CALENDAR</a></li>
-  <li><a id="nonicon">FORMS</a></li>
-  <li><a id="nonicon">CLUBS</a></li>
+  <li><a href="#mypanel2" id="nonicon">CALENDAR</a></li>
+  <li><a href="forms.html" id="nonicon">FORMS</a></li>
+  <li><a href="clubs.html" id="nonicon">CLUBS</a></li>
           </ul>
       
 <div id="headerlogo"><img id="mainlogo"src="pageTopLogo.png" width="300" height="70"></div>
       
       <ul id="rightsection">
   
-  <li><a id="nonicon">GRADUATION</a></li>
-  <li><a id="nonicon">JOIN</a></li>
-  <li><a id="nonicon">SEARCH</a></li>
+  <li><a href="graduation.html" id="nonicon">GRADUATION</a></li>
+  <li><a href="join.html" id="nonicon">JOIN</a></li>
+  <li><a href="#mypanel" id="nonicon">SEARCH</a></li>
       </ul>
       
       
@@ -296,30 +315,7 @@
         
     
         
-    <div id="navigationbar">
-        <div class="container">
-            <p></p>
-            
-            <div align="center" class="navigationiconsfirstrow">
-                <a href="#mypanel2" id="calendar" rel="external"><img src="calendaricon.png" alt="Calendar" width="128" height="150" /></a>
-                <a href="forms.html" id="forms" rel="external"><img src="formsicon.png" alt="Forms" width="128" height="150" /></a>
-                <a href="clubs.html" id="clubs" rel="external"><img src="clubsicon.png" alt="Clubs" width="128" height="150" /></a>
-            
-                
-                
-            </div>
-            <div align="center" class="navigationiconssecondrow">
-                <a href="graduation.html" id="graduation" rel="external"><img src="gradicon.png" alt="Grad" width="128" height="150" /></a>
-                <a href="#mypanel" id="search" rel="external"><img src="searchicon.png" alt="Search" width="128" height="150" /></a>
-                <a href="join.html." id="join" rel="external"><img src="joinicon.png" alt="Join Student Council" width="128" height="150" /></a>
-            
-                
-                
-            </div>
-            
-        </div>
-        
-    </div>   
+
 
     
 
