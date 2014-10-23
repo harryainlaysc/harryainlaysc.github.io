@@ -1,283 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Ainlay Student Council</title>
-    <head>
+    <title>Harry Ainlay Student Council</title>
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
         
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
         
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+      <div class="navbar-brand">
+        <a href="#"><img src="images/SCLogoColour.png" width="90px"/></a>
+      </div>
+
+      <div class="collapse navbar-collapse navHeaderCollapse">
         
-        <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
-        
-    <style>
-    
-    body{
-        margin:0;
-        background: #262626;
-    }
-    h1{
-        color: white;
-        font-family: 'Lato', sans-serif;
-        font-style: normal;
-        font-size: 50px;
-        font-weight: 300;
-    }
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="#">CALENDAR </a></li>
+          <li><a href="#">CLUBS</a></li>
+          <li><a href="#">FORMS</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">GRADUATION</a></li>
+          <li><a href="#">JOIN</a></li>
+          <li><a href="#">SEARCH</a></li>
+
+      </div>
+
+
    
-    #topbar {
-        
-        width: auto;
-        height: auto;
-        background-color: darkblue;
-        color: white;
-        
-    }
-        
-    #topbar p{
-        color: white;
-        font-family: 'Lato', sans-serif;
-        font-size: 14px;
-        
-    }
-    #whitespace{
-        
-        width: 100%;
-        height: 100px;
-        background: #262626;
-        
-        
-    }
-    #whitespace img{
-        
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-    div#main-content { display: none; }    
-        
-    #navigationbar{
-        padding-left:0;
-        width: 100%;
-        height: 100%;
-        background-color: #2B60DE;
-        padding-right:0;
-        padding-top:100px;
-        padding-bottom:80px;
-        max-height: 2000px; 
-        
-       
-        
-    }
-    #adminbar{
-        padding-left:0;
-        width: 100%;
-        height: 100%;
-        background-color: #262626;
-        padding-right:0;
-        padding-top:40px;
-        padding-bottom:1000px;
-        max-height: 600px;
-        
-    }
-   
-                
-                
-    #stickyheader {
-        width: 100%;
-        height: 0px;
-        background: #2B60DE;
-    }
-    #appearMenu{
-        margin: 5px;
-        font-family: 'Lato', sans-serif;
-        font-size: 0px;
-        
-    }
-    .navicons {
-        padding-bottom: 25px;
-        margin-left: 50px;
-        margin-right: 50px;
-        
-       
-    }
-       
-        
-    @media (max-device-width: 700px){
-        .navigationiconsfirstrow img {
-            margin-left: 50px;
-            margin-right: 50px;
-            margin-bottom: 30px;
-    }
-        .navigationiconssecondrow img {
-            margin-top: 30px;
-            margin-left: 50px;
-            margin-right: 50px;
-            margin-bottom: 0px;
-        
-    }
-        
-        
-        
-    }
-    
-    @media (min-device-width: 701px){
-        .navigationiconsfirstrow img {
-            margin-left: 100px;
-            margin-right: 100px;
-            margin-bottom: 25x;
-    }
-        .navigationiconssecondrow img {
-            margin-top: 25px;
-            margin-left: 100px;
-            margin-right: 100px;
-            margin-bottom: 0px;
-        
-    }
-    #searchTitle{
-        color:#2B60DE;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-        
-        
-    }
-    #footerText{
-        color:black;
-    }
-
-    
-        
-        
-    }
-    
-    </style>
-        
-        <script>
-        $(document).ready(function() {
-    $('#main-content').fadeIn();
-});   
-        
-        $(function(){
-        // Check the initial Poistion of the Sticky Header
-       
-            
-        var stickyHeaderTop = $('#stickyheader').offset().top;
-        
-        $('#stickyheader').css('opacity', '0')
-        $(window).scroll(function(){
-                if( $(window).scrollTop() > stickyHeaderTop - 70 ) {
-                        $('#stickyheader').css({position: 'fixed', top: '0px'});
-                        $('#stickyheader').css('opacity', '0.98')
-                        $('#stickyheader').css('background-color', '#2B60DE')
-                        $('#stickyheader').css('height', '40px')
-                        $('#appearMenu').css('color', 'white');
-                        $('#appearMenu').css('font-size', '20px');
-                        
-                } else {
-                        
-                        $('#stickyheader').css('height', '0px')
-                        $('#stickyheader').css('opacity', '0')
-                        
-                        
-                }
-        });
-  });
-        </script>
-        
-    </head>
-    <div id="main-content">
-    <div data-role="page">			
-
-        <div data-role="panel" id="mypanel" data-theme="b" data-position-fixed="true" data-position="right" data-display="overlay">
-            <p id="searchTitle">SEARCH</p>
-                <div id="search"> 
-        <form class="ui-filterable">
-    <input id="inset-autocomplete-input" data-type="search" placeholder="Search Website">
-</form>
-<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input">
-    <li data-filtertext="Graduation"><a href="graduation.html">Graduation</a></li>
-    <li data-filtertext="Home"><a href="index.html">Home</a></li>
-    <li data-filtertext="Forms applications"><a href="forms.html">Forms</a></li>
-    <li data-filtertext="apply join student council sc"><a href="#">Join Student Council</a></li>
-    <li data-filtertext="clubs join get involved dance computer science movie math me to we amnesty"><a href="clubs.html">Clubs</a></li>
-    <li data-filtertext="calendar dates events upcoming agenda"><a href="calendar.html">Calendar</a></li>
-    
-</ul>
-
-</div>
-        
-        </div><!-- /panel -->
-        
-        <div data-role="panel" id="mypanel2" data-theme="a" data-position-fixed="true" data-position="left" data-display="overlay">
-            <p id="searchTitle">UPCOMING EVENTS</p>
-            
-            <a href="#" class="ui-btn ui-btn-b">View Full Calendar</a>
-            
-                
-        
-        </div><!-- /panel -->
-
-    <header>
-    
-  <div id="whitespace">
-        <a href="index.html"><img src="pageTopLogo.png" alt="Logo" width="300" height="70" /></a>
-  </div>
-    
+         
+      </div>
 
 
-        
-    
-        
-    <div id="navigationbar">
-        <div class="container">
-            <p></p>
-            
-            <div align="center" class="navigationiconsfirstrow">
-                <a href="#mypanel2" rel="external"><img src="calendaricon.png" alt="Calendar" width="128" height="150" /></a>
-                <a href="forms.html" rel="external"><img src="formsicon.png" alt="Forms" width="128" height="150" /></a>
-                <a href="clubs.html" rel="external"><img src="clubsicon.png" alt="Clubs" width="128" height="150" /></a>
-            
-                
-                
-            </div>
-            <div align="center" class="navigationiconssecondrow">
-                <a href="graduation.html" rel="external"><img src="gradicon.png" alt="Grad" width="128" height="150" /></a>
-                <a href="#mypanel" rel="external"><img src="searchicon.png" alt="Search" width="128" height="150" /></a>
-                <a href="join.html." rel="external"><img src="joinicon.png" alt="Join Student Council" width="128" height="150" /></a>
-            
-                
-                
-            </div>
-            
-        </div>
-        
-    </div>   
-
-    
-
-
-			
-    
-    </header>
-    <body>
-    
- 
- 
-  <div id="stickyheader">
-    <p id=appearMenu>Forms</p>
-      
-  </div>
-    <div id="adminbar">
-        <h1> ADMINISTRATION </h1>
     </div>
-    <div data-role="footer" data-position="static">
-	<h1 id="footerText">Harry Ainlay High School - Student Council</h1>
-</div>
 
-    
-    
-    </body>
-</div><!-- page -->
-        </div>
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
