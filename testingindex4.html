@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-
     <title>Harry Ainlay Student Council</title>
     <!-- FONTS -->
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
@@ -13,6 +12,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/mystyles.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -39,7 +39,7 @@
       <div class="collapse navbar-collapse navHeaderCollapse">
         
         <ul class="nav navbar-nav navbar-left">
-          <li><a href="#" id="opener">CALENDAR </a></li>
+          <li><a href="mypanel2">CALENDAR </a></li>
           <li><a href="#">CLUBS</a></li>
           <li><a href="#">FORMS</a></li>
         </ul>
@@ -58,63 +58,45 @@
 
 
     </div>
-    <div id="slide-panel">
+
+
+
+
+
+
+
+    <div data-role="panel" id="mypanel" data-theme="b" data-position-fixed="true" data-position="right" data-display="overlay">
+            
+      <div id="search"> 
+        <form class="ui-filterable">
+          <input id="inset-autocomplete-input" data-type="search" placeholder="Search Website">
+        </form>
+      <ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input">
+        <li data-filtertext="Graduation"><a href="graduation.html">Graduation</a></li>
+        <li data-filtertext="Home"><a href="index.html">Home</a></li>
+        <li data-filtertext="Forms applications"><a href="forms.html">Forms</a></li>
+        <li data-filtertext="apply join student council sc"><a href="#">Join Student Council</a></li>
+        <li data-filtertext="clubs join get involved dance computer science movie math me to we amnesty"><a href="clubs.html" rel="external">Clubs</a></li>
+        <li data-filtertext="calendar dates events upcoming agenda"><a href="calendar.html">Calendar</a></li>
+    
+      </ul>
+
+      </div>
+        
+    </div><!-- /panel -->
+        
+    <div data-role="panel" id="mypanel2" data-theme="a" data-position-fixed="true" data-position="left" data-display="overlay">
+      <p id="searchTitle">UPCOMING EVENTS</p>
+      <a href="#" id="viewfullcalendar" class="ui-btn ui-btn-b">VIEW FULL CALENDAR</a>
       
-      <h2><span class="label label-primary"> DODGEBALL  </span>  <span class="label label-danger" id="pullToRight">23 October</span></h2>
-      <h2><span class="label label-primary"> HOMECOMING </span>  <span class="label label-danger" id="pullToRight">24 October</span></h2>
-      <button type="button" class="btn btn-info" id="viewFullCalendarButton">VIEW FULL CALENDAR</button>
-      <button type="button" class="btn btn-info" id="closeButton">CLOSE</button>
-    </div>
-
-
-
-
-
-
-
+    </div><!-- /panel -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     
-
-
-
-    <script>
-      $('#opener').on('click', function() {   
-    var panel = $('#slide-panel');
-    if (panel.hasClass("visible")) {
-      panel.removeClass('visible').animate({'margin-left':'-350px'});
-    } else {
-      panel.addClass('visible').animate({'margin-left':'0px'});
-
-    } 
-  
-  });
-      </script>
-
-    <script>
-      $('#closeButton').on('click', function(){
-        var panel = $('#slide-panel');
-        panel.removeClass('visible').animate({'margin-left':'-350px'});
-      });
-      </script>
-
-    <script>
-
-    $(document).on('click','.navbar-collapse.in',function(e) {
-    if( $(e.target).is('a') ) {
-        $(this).collapse('hide');
-    }
-});</script>
-
-
-    <script>
-      
-    </script>
-
-
-      
+        
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
   </body>
 </html>

@@ -25,4 +25,31 @@
 }
 
 
+#slide-panel {
+    width:350px;
+    height:100%;
+    padding:10px;
+    background: #d6d6d6;
+    margin-left:-350px;
+    
+    
 
+}
+#slide-panel h2{
+	font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+#pullToRight{
+	float:right;
+}
+#closeButton{
+	margin-top: 30px;
+	float:right;
+}
+#viewFullCalendarButton{
+	margin-top: 30px;
+
+}
