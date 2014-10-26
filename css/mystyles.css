@@ -56,6 +56,37 @@ body{
 
 }
 
+#eventSlider{
+	position: fixed;
+	width:100%;
+	height: 100%;
+	background-color: red;
+	
+}
+#eventSlider h3{
+	color: yellow;
+}
+
+
+.jumbotron{
+	background-color: royalblue;
+	
+	font-family: 'Lato', sans-serif;
+    font-style: normal;
+    color:white;
+    height: 100%;
+    
+
+}
+
+
+
+
+
+
+
+
+
 
 
 #search {
@@ -135,7 +166,8 @@ body{
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 200%;
+    /* Change the below height if there are more events in the calendar page */
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     
     -webkit-transition: all 0.5s ease-in-out;
