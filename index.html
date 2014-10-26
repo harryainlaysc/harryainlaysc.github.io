@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    
 
     <title>Harry Ainlay Student Council</title>
     <!-- FONTS -->
@@ -83,7 +85,7 @@
         <h3><span class="label label-primary">HOMECOMING</span><span class="label label-danger" id="pullToRight">25 November</span></h3>
       </div>
 
-      <button type="button" class="btn btn-danger" id="viewFullCalendarBtn">View Full Calendar</button>
+      <button class="btnCustom btn-warning" id="viewFullCalendarBtn">Full Calendar</button>
     </div>
 
 
@@ -212,18 +214,6 @@
     });
     $('form').submit(function(event) {
         event.preventDefault();
-
-        var inputValue = document.getElementById('searchInput').value;
-        if (inputValue === "abc"){
-          console.log("True");
-
-        }else{
-          console.log("False");
-        }
-
-
-        console.log(inputValue);
-        
 
         return true;
     })

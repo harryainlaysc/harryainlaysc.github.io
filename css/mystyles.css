@@ -188,6 +188,32 @@ body{
 	padding-right: 30%;
 }
 
+.btnCustom {
+  
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#viewFullCalendarBtn{
+    position: absolute;
+    margin-top: 100px;
+    width: 200px;
+    left: 50%;
+    right: 50%;
+    margin-left: -100px;
+    
+    font-size: 20px;
+   	float: left;
+}
+
 
 @media (max-device-width: 700px){
 	#eventList{
@@ -196,5 +222,4 @@ body{
 	}
 
 }
-
 
