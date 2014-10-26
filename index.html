@@ -154,6 +154,7 @@
     $('a[href="#search"]').on('click', function(event) {
         event.preventDefault();
         $('#search').addClass('open');
+        $('#calendar').removeClass('open');
         <!--Line below auto focuses on the text field -->
         <!--$('#search > form > input[type="search"]').focus();-->
     });
@@ -199,6 +200,7 @@
     $('a[href="#calendar"]').on('click', function(event) {
         event.preventDefault();
         $('#calendar').addClass('open');
+        $('#search').removeClass('open');
         <!--Line below auto focuses on the text field -->
         <!--$('#calendar > form > input[type="search"]').focus();-->
     });
