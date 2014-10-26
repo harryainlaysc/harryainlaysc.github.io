@@ -2,7 +2,9 @@
 .navbar-brand:focus {
   opacity: 0.75;
 }
-
+body{
+	background-color: royalblue;
+}
 
 .navbar-brand img{
   
@@ -98,7 +100,7 @@
     width: 100%;
     color: rgb(255, 255, 255);
     background: rgba(0, 0, 0, 0);
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 100;
     text-align: center;
     border: 0px;

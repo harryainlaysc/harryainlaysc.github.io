@@ -70,7 +70,7 @@
     <div id="search">
       <button type="button" class="close">×</button>
       <form>
-        <input type="search" value="" placeholder="type keywords here" />
+        <input type="search" value="" placeholder="type keywords here" id="searchInput"/>
         <button type="submit" class="btn btn-primary" id="searchButton">Search</button>
       </form>
     </div>
@@ -136,7 +136,8 @@
     $('a[href="#search"]').on('click', function(event) {
         event.preventDefault();
         $('#search').addClass('open');
-        
+        <!--Line below auto focuses on the text field -->
+        <!--$('#search > form > input[type="search"]').focus();-->
     });
     
     $('#search, #search button.close').on('click keyup', function(event) {
@@ -147,7 +148,20 @@
     
     $('form').submit(function(event) {
         event.preventDefault();
-        return false;
+
+        var inputValue = document.getElementById('searchInput').value;
+        if (inputValue === "abc"){
+          console.log("True");
+
+        }else{
+          console.log("False");
+        }
+
+
+        console.log(inputValue);
+        
+
+        return true;
     })
 });
     </script>
