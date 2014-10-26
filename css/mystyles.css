@@ -215,14 +215,19 @@ body{
     font-size: 20px;
    	float: left;
 }
-
+#pullToLeft{
+	float:left;
+}
+#pullToRight{
+	float:right;
+}
 
 @media (max-device-width: 720px){
 	
 	#eventList{
 		padding-top: 100px;
-		padding-left: 5%;
-		padding-right:5%;
+		padding-left: 2%;
+		padding-right:2%;
 		
 
 	}
