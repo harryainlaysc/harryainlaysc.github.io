@@ -183,7 +183,7 @@ body{
 }
 
 #eventList{
-	padding-top: 200px;
+	padding-top: 85px;
 	padding-left: 30%;
 	padding-right: 30%;
 }
@@ -204,7 +204,7 @@ body{
 
 #viewFullCalendarBtn{
     position: absolute;
-    margin-top: 100px;
+    margin-top: 75px;
     width: 200px;
     left: 50%;
     right: 50%;
@@ -215,7 +215,7 @@ body{
 }
 
 
-@media (max-device-width: 700px){
+@media (max-device-width: 1000px){
 	#eventList{
 		padding-left: 5%;
 		padding-right:5%;
