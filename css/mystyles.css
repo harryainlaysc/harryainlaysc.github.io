@@ -217,7 +217,7 @@ body{
 }
 
 
-@media (max-device-width: 1000px){
+@media (max-device-width: 720px){
 	
 	#eventList{
 		padding-top: 65px;
@@ -229,6 +229,16 @@ body{
 	#viewFullCalendarBtn{
 		margin-top: 30px;
 	}
+	#calendar .close {
+    	
+    	top: 60px;
+    	right: 5px;
+    	
+		border-color: #357ebd;
+		opacity: 1;
+		padding: 10px 17px;
+		font-size: 20px;
+}
 
 }
 
