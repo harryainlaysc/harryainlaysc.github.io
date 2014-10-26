@@ -217,8 +217,12 @@ body{
 
 @media (max-device-width: 1000px){
 	#eventList{
+		padding-top: 50px;
 		padding-left: 5%;
 		padding-right:5%;
+	}
+	#viewFullCalendarBtn{
+		margin-top: 30px;
 	}
 
 }
