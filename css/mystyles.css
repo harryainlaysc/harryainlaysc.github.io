@@ -217,14 +217,13 @@ body{
 
 
 @media (max-device-width: 1000px){
-	#calendar{
-		overflow:scroll;
-	}
+	
 	#eventList{
 		padding-top: 50px;
 		padding-left: 5%;
 		padding-right:5%;
-		
+		overflow:scroll;
+
 	}
 	#viewFullCalendarBtn{
 		margin-top: 30px;
