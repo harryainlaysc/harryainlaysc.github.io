@@ -39,7 +39,7 @@
       <div class="collapse navbar-collapse navHeaderCollapse">
         
         <ul class="nav navbar-nav navbar-left">
-          <li><a href="#" id="opener">CALENDAR </a></li>
+          <li><a href="#calendar">CALENDAR </a></li>
           <li><a href="#">CLUBS</a></li>
           <li><a href="#">FORMS</a></li>
         </ul>
@@ -75,7 +75,16 @@
       </form>
     </div>
 
+    <div id="calendar">
+      <button type="button" class="close">×</button>
+     
+      <div id="eventList">
+        <h1><span class="label label-primary">DODGEBALL</span><span class="label label-danger" id="pullToRight">23 October</span></h1>
+        <h1><span class="label label-primary">HOMECOMING</span><span class="label label-danger" id="pullToRight">25 November</span></h1>
+      </div>
 
+      <button type="button" class="btn btn-danger" id="viewFullCalendarBtn">View Full Calendar</button>
+    </div>
 
 
 
@@ -131,6 +140,15 @@
 });</script>
 
 
+
+
+
+
+
+
+
+
+
     <script>
       $(function () {
     $('a[href="#search"]').on('click', function(event) {
@@ -164,6 +182,51 @@
         return true;
     })
 });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+       <script>
+      $(function () {
+    $('a[href="#calendar"]').on('click', function(event) {
+        event.preventDefault();
+        $('#calendar').addClass('open');
+        <!--Line below auto focuses on the text field -->
+        <!--$('#calendar > form > input[type="search"]').focus();-->
+    });
+    
+    $('#calendar, #calendar button.close').on('click keyup', function(event) {
+        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+            $(this).removeClass('open');
+        }
+    });
+    $('form').submit(function(event) {
+        event.preventDefault();
+
+        var inputValue = document.getElementById('searchInput').value;
+        if (inputValue === "abc"){
+          console.log("True");
+
+        }else{
+          console.log("False");
+        }
+
+
+        console.log(inputValue);
+        
+
+        return true;
+    })
+});
+    
     </script>
 
 
