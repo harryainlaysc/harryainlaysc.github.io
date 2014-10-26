@@ -187,6 +187,7 @@ body{
 	padding-top: 85px;
 	padding-left: 30%;
 	padding-right: 30%;
+
 }
 
 .btnCustom {
@@ -217,12 +218,14 @@ body{
 
 
 @media (max-device-width: 1000px){
-	
+	#calendar{
+		overflow:scroll;
+	}
 	#eventList{
 		padding-top: 50px;
 		padding-left: 5%;
 		padding-right:5%;
-		overflow:scroll;
+		
 
 	}
 	#viewFullCalendarBtn{
