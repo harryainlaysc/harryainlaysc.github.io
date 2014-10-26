@@ -47,7 +47,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">GRADUATION</a></li>
           <li><a href="#">JOIN</a></li>
-          <li><a href="#">SEARCH</a></li>
+          <li><a href="#search">SEARCH</a></li>
 
       </div>
 
@@ -58,13 +58,27 @@
 
 
     </div>
-    <div id="slide-panel">
+    <div id="calendar-panel">
       
       <h2><span class="label label-primary"> DODGEBALL  </span>  <span class="label label-danger" id="pullToRight">23 October</span></h2>
       <h2><span class="label label-primary"> HOMECOMING </span>  <span class="label label-danger" id="pullToRight">24 October</span></h2>
       <button type="button" class="btn btn-info" id="viewFullCalendarButton">VIEW FULL CALENDAR</button>
       <button type="button" class="btn btn-info" id="closeButton">CLOSE</button>
     </div>
+
+
+    <div id="search">
+      <button type="button" class="close">×</button>
+      <form>
+        <input type="search" value="" placeholder="type keywords here" />
+        <button type="submit" class="btn btn-primary" id="searchButton">Search</button>
+      </form>
+    </div>
+
+
+
+
+
 
 
 
@@ -81,28 +95,35 @@
 
 
 
+    
+
+
+
     <script>
-      $('#opener').on('click', function() {   
-    var panel = $('#slide-panel');
-    if (panel.hasClass("visible")) {
-      panel.removeClass('visible').animate({'margin-left':'-350px'});
-    } else {
-      panel.addClass('visible').animate({'margin-left':'0px'});
+    <!--The calendar button opens and closes the calendar slide-->
+    $('#opener').on('click', function() {   
+      var panel = $('#calendar-panel');
+      if (panel.hasClass("visible")) {
+        panel.removeClass('visible').animate({'margin-left':'-350px'});
+      } 
+      else {
+        panel.addClass('visible').animate({'margin-left':'0px'});
 
     } 
   
   });
-      </script>
+    </script>
 
     <script>
+      <!--Closes the calendar slide when the close button is clicked -->
       $('#closeButton').on('click', function(){
-        var panel = $('#slide-panel');
+        var panel = $('#calendar-panel');
         panel.removeClass('visible').animate({'margin-left':'-350px'});
       });
-      </script>
+    </script>
 
     <script>
-
+    <!--Closes the navbar on mobile when something is clicked -->
     $(document).on('click','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') ) {
         $(this).collapse('hide');
@@ -111,7 +132,24 @@
 
 
     <script>
-      
+      $(function () {
+    $('a[href="#search"]').on('click', function(event) {
+        event.preventDefault();
+        $('#search').addClass('open');
+        $('#search > form > input[type="search"]').focus();
+    });
+    
+    $('#search, #search button.close').on('click keyup', function(event) {
+        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+            $(this).removeClass('open');
+        }
+    });
+    
+    $('form').submit(function(event) {
+        event.preventDefault();
+        return false;
+    })
+});
     </script>
 
 
