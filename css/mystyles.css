@@ -102,9 +102,8 @@ html,body{height:100%;}
 }
 @media (max-device-width: 568px){
 	#personThrowingDodgeball{
-		height: auto;
-		width: 30vw;
-		opacity: 0.5;
+		visibility: none;
+		opacity: 0;
 	}
 }
 
