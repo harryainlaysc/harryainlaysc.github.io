@@ -62,10 +62,10 @@ body{
 	position: relative;
 	margin-top:-70px;
 	width:100%;
-	height:100%;
-	overflow: hidden;
-	background-color: red;
-	padding-bottom: 30%;
+	height:100ch;
+	margin-bottom: 100px;
+	background-color: #2e2e2e;
+	
 }
 #eventSlider h3{
 	color: yellow;
@@ -75,7 +75,7 @@ body{
 .jumbotron{
 	position: absolute;
 	background-color: #2e2e2e;
-	height: 100%;
+	padding-bottom:100px;
 	font-family: 'Lato', sans-serif;
     font-style: normal;
     color:white;
