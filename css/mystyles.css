@@ -60,7 +60,7 @@ body{
 #eventSlider{
 
 	position: relative;
-	margin-top:-70px;
+	margin-top:-71px;
 	overflow: hidden;
 	width:100%;
 	height:100vh;
@@ -69,7 +69,7 @@ body{
 	
 }
 #eventSlider h3{
-	color: yellow;
+	color: royalblue;
 }
 
 
