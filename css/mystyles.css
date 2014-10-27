@@ -61,9 +61,10 @@ body{
 
 	position: relative;
 	margin-top:-70px;
+	overflow: hidden;
 	width:100%;
-	height:100ch;
-	margin-bottom: 100px;
+	height:100vh;
+	
 	background-color: #2e2e2e;
 	
 }
@@ -75,7 +76,7 @@ body{
 .jumbotron{
 	position: absolute;
 	background-color: #2e2e2e;
-	padding-bottom:100px;
+	
 	font-family: 'Lato', sans-serif;
     font-style: normal;
     color:white;
