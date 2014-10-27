@@ -62,10 +62,10 @@ body{
 	position: relative;
 	margin-top:-70px;
 	width:100%;
-	height:100vh;
+	height:100%;
 	overflow: hidden;
-	background-color: #2e2e2e;
-	
+	background-color: red;
+	padding-bottom: 30%;
 }
 #eventSlider h3{
 	color: yellow;
@@ -79,7 +79,7 @@ body{
 	font-family: 'Lato', sans-serif;
     font-style: normal;
     color:white;
-    
+
     
 
 }
