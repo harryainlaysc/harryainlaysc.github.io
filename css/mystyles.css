@@ -100,11 +100,7 @@ html,body{height:100%;}
 	margin-bottom: -30px;
 
 }
-@media (max-device-width: 720px){
-	#personThrowingDodgeball2{
-		visibility: none;
-	}
-}
+
 
 
 
