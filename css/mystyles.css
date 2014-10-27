@@ -100,12 +100,7 @@ html,body{height:100%;}
     top: 50px;
 	
 }
-@media (max-device-width: 568px){
-	#personThrowingDodgeball{
-		visibility: none;
-		opacity: 0;
-	}
-}
+
 
 
 #adminTitle{
