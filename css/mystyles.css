@@ -92,14 +92,21 @@ html,body{height:100%;}
 
 }
 #personThrowingDodgeball{
+	position: absolute;
 	max-width: 100%;
-    min-width: 100px;
+    min-width: 300px;
     height: auto;
     padding-left: 10px;
-
+    top: 50px;
 	
 }
-
+@media (max-device-width: 568px){
+	#personThrowingDodgeball{
+		height: 40vh;
+		width: auto;
+		opacity: 0.5;
+	}
+}
 
 
 #adminTitle{
