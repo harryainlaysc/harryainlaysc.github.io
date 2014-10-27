@@ -5,6 +5,8 @@
 body{
 	background-color: white;
 }
+html,body{height:100%;}
+
 
 .navbar-brand img{
   
@@ -94,6 +96,13 @@ body{
 
 
 
+#adminTitle{
+	text-align: center;
+	padding-top: 50px;
+}
+
+
+
 
 
 
@@ -177,7 +186,7 @@ body{
 
 
 #calendar {
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
