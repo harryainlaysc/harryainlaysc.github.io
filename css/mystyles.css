@@ -80,7 +80,6 @@ html,body{height:100%;}
 
 
 .jumbotron{
-	position: absolute;
 	background-color: #2e2e2e;
 	
 	font-family: 'Lato', sans-serif;
@@ -92,12 +91,11 @@ html,body{height:100%;}
 
 }
 #personThrowingDodgeball{
-	position: absolute;
 	max-width: 100%;
-    min-width: 300px;
+    min-width: 200px;
     height: auto;
-    padding-left: 10px;
-    top: 50px;
+
+
 	
 }
 
