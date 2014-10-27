@@ -90,10 +90,20 @@ html,body{height:100%;}
     
 
 }
-#personThrowingDodgeball{
+#personThrowingDodgeball {
 	padding-top: 60px;
 	margin-bottom: -30px;
 
+}
+#personThrowingDodgeball2 {
+	padding-top: 60px;
+	margin-bottom: -30px;
+
+}
+@media (max-device-width: 720px){
+	#personThrowingDodgeball2{
+		visibility: none;
+	}
 }
 
 
