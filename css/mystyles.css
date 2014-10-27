@@ -84,14 +84,10 @@ body{
 }
 #personThrowingDodgeball{
 	padding-left:10px;
-	float:right;
-	width: 35%;
+	float:left;
+	width: 20em;
 
 	
-}
-#title{
-	position: absolute;
-	bottom: 100px;
 }
 
 
