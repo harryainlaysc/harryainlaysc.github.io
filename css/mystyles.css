@@ -91,11 +91,7 @@ html,body{height:100%;}
 
 }
 #personThrowingDodgeball{
-	max-width: 100%;
-    min-width: 200px;
-    height: auto;
-
-
+	padding-top: 60px;
 	
 }
 
