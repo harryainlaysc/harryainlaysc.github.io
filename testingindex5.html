@@ -106,6 +106,26 @@
           <div class="row text-center">
             <img id="crPicture" class="img-responsive img-center boardImage" src="http://www.focusmarketing.it/newsite/wp-content/uploads/2012/09/young-people-survey-940x300-940x300.jpg"/>
           </div>
+
+      <h1 id="designTitle" class="boardTitle">DESIGN COORDINATION</h1>
+          <div class="row text-center">
+            <img id="designPicture" class="img-responsive img-center boardImage" src="http://www.focusmarketing.it/newsite/wp-content/uploads/2012/09/young-people-survey-940x300-940x300.jpg"/>
+          </div>
+
+      <h1 id="loTitle" class="boardTitle">LEADERSHIP OUTREACH</h1>
+          <div class="row text-center">
+            <img id="loPicture" class="img-responsive img-center boardImage" src="http://www.focusmarketing.it/newsite/wp-content/uploads/2012/09/young-people-survey-940x300-940x300.jpg"/>
+          </div>
+
+      <h1 id="prTitle" class="boardTitle">PUBLIC RELATIONS</h1>
+          <div class="row text-center">
+            <img id="prPicture" class="img-responsive img-center boardImage" src="http://www.focusmarketing.it/newsite/wp-content/uploads/2012/09/young-people-survey-940x300-940x300.jpg"/>
+          </div>
+
+      <h1 id="tlifeTitle" class="boardTitle">TITAN LIFE</h1>
+          <div class="row text-center">
+            <img id="tlifePicture" class="img-responsive img-center boardImage" src="http://www.focusmarketing.it/newsite/wp-content/uploads/2012/09/young-people-survey-940x300-940x300.jpg"/>
+          </div>
     </div>
   </div>
   
@@ -297,34 +317,54 @@
 
 
     <script>
-
-      $(document).ready(function() {
- var isDesktop = (function() {
-  return !('ontouchstart' in window) // works on most browsers 
-  || !('onmsgesturechange' in window); // works on ie10
- })();
- //edit, if you want to use this variable outside of this closure, or later use this:
- window.isDesktop = isDesktop;
- if( isDesktop ){  $(window).bind("scroll", function() {
+    $(window).bind("scroll", function() {
+    var scrollPosition = $(this).scrollTop();
+    console.log(scrollPosition);
     
-    if ($(this).scrollTop() > 320) {
-        
+    if (scrollPosition < 320) {
+       
+        $("#scrollToViewCouncil").fadeIn();
+    }
+
+
+    if (scrollPosition > 320) {
+        $("#scrollToViewCouncil").fadeOut();
         $("#adminTitle").fadeIn();
         $("#adminPicture").fadeIn();
 
 
     } 
-    if ($(this).scrollTop() > 800){
+    if (scrollPosition  > 800){
 
       $("#crTitle").fadeIn();
       $("#crPicture").fadeIn();
     }
 
-      else {
-        $("#scrollToViewCouncil").fadeIn();
-        
+    if (scrollPosition  > 1200){
+
+      $("#designTitle").fadeIn();
+      $("#designPicture").fadeIn();
     }
-}); }
+
+    if (scrollPosition  > 1600){
+
+      $("#loTitle").fadeIn();
+      $("#loPicture").fadeIn();
+    }
+
+    if (scrollPosition  > 2000){
+
+      $("#prTitle").fadeIn();
+      $("#prPicture").fadeIn();
+    }
+
+    if (scrollPosition  > 2400){
+
+      $("#tlifeTitle").fadeIn();
+      $("#tlifePicture").fadeIn();
+    }
+
+    
 });
 
 
