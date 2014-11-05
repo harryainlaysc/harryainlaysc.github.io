@@ -140,7 +140,7 @@ html,body{height:100%;}
 
 
 .boardImage, .boardTitle{
-    padding-bottom: 50px;
+    
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
