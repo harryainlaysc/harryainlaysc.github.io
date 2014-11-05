@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    
+
+    <title>Harry Ainlay Student Council</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        
+        
+        <div class="navbar-brand">
+          <a href="#"><img src="images/SCLogoColour.png" width="90px"/></a>
+        </div>
+
+        <div class="collapse navbar-collapse navHeaderCollapse">
+        
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#calendar">CALENDAR </a></li>
+            <li><a href="#">CLUBS</a></li>
+            <li><a href="#">FORMS</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">GRADUATION</a></li>
+            <li><a href="join/">JOIN</a></li>
+            <li><a href="#search">SEARCH</a></li>
+
+        </div>
+
+
+   
+         
+      </div>
+
+
+    </div>
+
+
+
+    <!--Outside of the container because it has to be full width -->
+    <a href="www.google.com">
+    <div id="eventSlider">
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <p></p>
+        <p></p>
+          <img src="http://www.wpclipart.com/recreation/sports/sports_icons/dodgeball_clipart.svg" class="img-responsive" id="personThrowingDodgeball" />
+
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <img src="images/dodgeball1.png" class="img-responsive" id="personThrowingDodgeball2" />
+      </div>
+    </div>
+      <div class="jumbotron">
+
+        <div class="row" id="title">
+          
+          <div class="col-xs-12 col-sm-6 col-md-8">
+            <h1> DODGEBALL TOURNAMENT </h1>
+            <h3> FORMS AVAILABLE HERE </h3>
+
+          </div>
+          
+        </div>
+
+          <div id="scrollToViewCouncil"><h6 class="text-center"> SCROLL DOWN TO VIEW COUNCIL </h6></div>
+          
+
+      </div>
+        
+        
+      
+      </div>
+    
+    </a>
+
+
+    <div class="container">
+      <h1 id="adminTitle">ADMINISTRATION</h1>
+          <img id="adminPicture" class="img-responsive" src="http://www.focusmarketing.it/newsite/wp-content/uploads/2012/09/young-people-survey-940x300-940x300.jpg"/>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+    <div id="calendar-panel">
+      
+      <h2><span class="label label-primary"> DODGEBALL  </span>  <span class="label label-danger" id="pullToRight">23 October</span></h2>
+      <h2><span class="label label-primary"> HOMECOMING </span>  <span class="label label-danger" id="pullToRight">24 October</span></h2>
+      <button type="button" class="btn btn-info" id="viewFullCalendarButton">VIEW FULL CALENDAR</button>
+      <button type="button" class="btn btn-info" id="closeButton">CLOSE</button>
+    </div>
+
+
+    <div id="search">
+      <button type="button" class="close">×</button>
+      <form>
+        <input type="search" value="" placeholder="type keywords here" id="searchInput"/>
+        <button type="submit" class="btn btn-primary" id="searchButton">Search</button>
+      </form>
+    </div>
+
+    <div id="calendar">
+      <button type="button" class="close">×</button>
+     
+      <div id="eventList">
+        <h3><span class="label label-primary" id="pulltoLeft">DODGEBALL</span><span class="label label-danger" id="pullToRight">23 October</span></h3>
+        <h3><span class="label label-primary" id="pulltoLeft">HOMECOMING3</span><span class="label label-danger" id="pullToRight">25 November</span></h3>
+        <h3><span class="label label-primary" id="pulltoLeft">HOMECOMING</span><span class="label label-danger" id="pullToRight">25 November</span></h3>
+        <h3><span class="label label-primary" id="pulltoLeft">HOMECOMING</span><span class="label label-danger" id="pullToRight">25 November</span></h3>
+        <h3><span class="label label-primary" id="pulltoLeft">HOMECOMING</span><span class="label label-danger" id="pullToRight">25 November</span></h3>
+        <h3><span class="label label-primary" id="pulltoLeft">HOMECOMING</span><span class="label label-danger" id="pullToRight">25 November</span></h3>
+        <h3><span class="label label-primary" id="pulltoLeft">HOMECOMING</span><span class="label label-danger" id="pullToRight">25 November</span></h3>
+        
+        
+
+
+       
+
+      </div>
+
+      <button class="btnCustom btn-warning" id="viewFullCalendarBtn">Full Calendar</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- Loading all external files -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+
+
+
+    
+
+
+
+    <script>
+    <!--The calendar button opens and closes the calendar slide-->
+    $('#opener').on('click', function() {   
+      var panel = $('#calendar-panel');
+      if (panel.hasClass("visible")) {
+        panel.removeClass('visible').animate({'margin-left':'-350px'});
+      } 
+      else {
+        panel.addClass('visible').animate({'margin-left':'0px'});
+
+    } 
+  
+  });
+    </script>
+
+    <script>
+      <!--Closes the calendar slide when the close button is clicked -->
+      $('#closeButton').on('click', function(){
+        var panel = $('#calendar-panel');
+        panel.removeClass('visible').animate({'margin-left':'-350px'});
+      });
+    </script>
+
+    <script>
+    <!--Closes the navbar on mobile when something is clicked -->
+    $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});</script>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      $(function () {
+    $('a[href="#search"]').on('click', function(event) {
+        event.preventDefault();
+        $('#search').addClass('open');
+        $('#calendar').removeClass('open');
+        <!--Line below auto focuses on the text field -->
+        <!--$('#search > form > input[type="search"]').focus();-->
+    });
+    
+    $('#search, #search button.close').on('click keyup', function(event) {
+        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+            $(this).removeClass('open');
+        }
+    });
+    
+    $('form').submit(function(event) {
+        event.preventDefault();
+
+        var inputValue = document.getElementById('searchInput').value;
+        if (inputValue === "abc"){
+          console.log("True");
+
+        }else{
+          console.log("False");
+        }
+
+
+        console.log(inputValue);
+        
+
+        return true;
+    })
+});
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+       <script>
+      $(function () {
+    $('a[href="#calendar"]').on('click', function(event) {
+        event.preventDefault();
+        $('#calendar').addClass('open');
+        $('#search').removeClass('open');
+        <!--Line below auto focuses on the text field -->
+        <!--$('#calendar > form > input[type="search"]').focus();-->
+    });
+    
+    $('#calendar, #calendar button.close').on('click keyup', function(event) {
+        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+            $(this).removeClass('open');
+        }
+    });
+    $('form').submit(function(event) {
+        event.preventDefault();
+
+        return true;
+    })
+});
+    
+    </script>
+
+
+    <script>
+      $(window).bind("scroll", function() {
+    if ($(this).scrollTop() > 320) {
+        $("#scrollToViewCouncil").stop().fadeOut();
+        $("#adminTitle").fadeIn();
+        $("#adminPicture").fadeIn();
+    } else {
+        $("#scrollToViewCouncil").fadeIn();
+        
+    }
+});
+
+    </script>
+    
+
+
+      
+  </body>
+</html>
