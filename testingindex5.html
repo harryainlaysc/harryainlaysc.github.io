@@ -290,7 +290,15 @@
 
 
     <script>
-      $(window).bind("scroll", function() {
+
+      $(document).ready(function() {
+ var isDesktop = (function() {
+  return !('ontouchstart' in window) // works on most browsers 
+  || !('onmsgesturechange' in window); // works on ie10
+ })();
+ //edit, if you want to use this variable outside of this closure, or later use this:
+ window.isDesktop = isDesktop;
+ if( isDesktop ){  $(window).bind("scroll", function() {
     if ($(this).scrollTop() > 320) {
         $("#scrollToViewCouncil").stop().fadeOut();
         $("#adminTitle").fadeIn();
@@ -299,7 +307,12 @@
         $("#scrollToViewCouncil").fadeIn();
         
     }
+}); }
 });
+
+
+    
+     
 
     </script>
     
