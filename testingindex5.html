@@ -97,8 +97,15 @@
 
 
     <div class="container">
-      <h1 id="adminTitle">ADMINISTRATION</h1>
-          <img id="adminPicture" class="img-responsive" src="http://www.focusmarketing.it/newsite/wp-content/uploads/2012/09/young-people-survey-940x300-940x300.jpg"/>
+      <h1 id="adminTitle" class="boardTitle">ADMINISTRATION</h1>
+          <div class="row text-center">
+            <img id="adminPicture" class="boardImage" class="img-responsive img-center" src="http://www.focusmarketing.it/newsite/wp-content/uploads/2012/09/young-people-survey-940x300-940x300.jpg"/>
+          </div>
+
+      <h1 id="crTitle" class="boardTitle">COMMUNITY RELATIONS</h1>
+          <div class="row text-center">
+            <img id="crPicture" class="boardImage" class="img-responsive img-center" src="http://www.focusmarketing.it/newsite/wp-content/uploads/2012/09/young-people-survey-940x300-940x300.jpg"/>
+          </div>
     </div>
   </div>
   
@@ -299,11 +306,21 @@
  //edit, if you want to use this variable outside of this closure, or later use this:
  window.isDesktop = isDesktop;
  if( isDesktop ){  $(window).bind("scroll", function() {
+    
     if ($(this).scrollTop() > 320) {
-        $("#scrollToViewCouncil").stop().fadeOut();
+        
         $("#adminTitle").fadeIn();
         $("#adminPicture").fadeIn();
-    } else {
+
+
+    } 
+    if ($(this).scrollTop() > 900){
+
+      $("#crTitle").fadeIn();
+      $("#crPicture").fadeIn();
+    }
+
+      else {
         $("#scrollToViewCouncil").fadeIn();
         
     }
