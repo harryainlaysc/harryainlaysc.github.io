@@ -148,7 +148,26 @@ body{
 	overflow: hidden;
 	
 }
-
+#designPicture{
+	background-color: #BDC3C7;
+	width: 100%;
+	overflow: hidden;
+}
+#loPicture{
+	background-color: #1e262f;
+	width: 100%;
+	overflow: hidden;
+}
+#prPicture{
+	background-color: #d5d5d5;
+	width: 100%;
+	overflow: hidden;	
+}
+#tlifePicture{
+	background-color: #30363f;
+	width: 100%;
+	overflow: hidden;		
+}
 
 
 
