@@ -137,7 +137,17 @@ body{
 	padding-top: 50px;
 }
 
-
+#adminPicture{
+	background-color: #D2d7d3;
+	width: 100%;
+	overflow: hidden;
+}
+#crPicture{
+	background-color: #2e3444;
+	width: 100%;
+	overflow: hidden;
+	
+}
 
 
 
@@ -347,3 +357,13 @@ body{
 }
 
 }
+
+
+
+
+
+
+
+
+
+
