@@ -18,7 +18,9 @@
     <![endif]-->
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-static-top">
+
+
+    <div class="navbar navbar-inner navbar-inverse navbar-fixed-top">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -27,75 +29,63 @@
           <span class="icon-bar"></span>
         </button>
 
-        
-        
         <div class="navbar-brand">
           <a href="#"><img src="images/SCLogoColour.png" width="90px"/></a>
         </div>
 
-        <div class="collapse navbar-collapse navHeaderCollapse">
-        
+        <div class="collapse navbar-collapse navHeaderCollapse">        
           <ul class="nav navbar-nav navbar-left">
             <li><a href="#calendar">CALENDAR </a></li>
             <li><a href="#">CLUBS</a></li>
             <li><a href="#">FORMS</a></li>
           </ul>
-
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">GRADUATION</a></li>
             <li><a href="join/">JOIN</a></li>
             <li><a href="#search">SEARCH</a></li>
-
+          </ul>
         </div>
-
-
-   
-         
       </div>
-
-
     </div>
 
 
 
-    <!--Outside of the container because it has to be full width -->
     
-    <a href="www.google.com">
-    <div id="eventSlider">
-    <div class="row">
-      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <p></p>
-        <p></p>
-          <img src="http://www.wpclipart.com/recreation/sports/sports_icons/dodgeball_clipart.svg" class="img-responsive" id="dodgeballImages" />
-
-      </div>
-      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-          <img src="http://www.wpclipart.com/recreation/sports/sports_icons/dodgeball_clipart.svg" class="img-responsive pullToRight" id="dodgeballImages"  />
-      </div>
-    </div>
-      <div class="jumbotron">
-
-        <div class="row" id="title">
-          
-          <div class="col-xs-12 col-sm-6 col-md-8">
-            <h1> DODGEBALL TOURNAMENT </h1>
-            <h3> FORMS AVAILABLE HERE </h3>
-
+    <div class="container">
+      <a href="www.google.com">
+        <div id="eventSlider">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">              
+                <img src="http://www.wpclipart.com/recreation/sports/sports_icons/dodgeball_clipart.svg" class="img-responsive" id="dodgeballImages" />
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <img src="http://www.wpclipart.com/recreation/sports/sports_icons/dodgeball_clipart.svg" class="img-responsive pullToRight" id="dodgeballImages"  />
+            </div>
           </div>
+        
+
+          <div class="jumbotron">
+
+              <div class="row" id="title">
+                
+                <div class="col-xs-12 col-sm-6 col-md-8">
+                  <h1> DODGEBALL TOURNAMENT </h1>
+                  <h3> FORMS AVAILABLE HERE </h3>
+
+                </div>
+                
+              </div>
+
+                <div id="scrollToViewCouncil"><h6 class="text-center"> SCROLL DOWN TO VIEW COUNCIL </h6></div>
+                
+          </div>
+            
+            
           
         </div>
-
-          <div id="scrollToViewCouncil"><h6 class="text-center"> SCROLL DOWN TO VIEW COUNCIL </h6></div>
-          
-
-      </div>
-        
-        
       
-      </div>
-    
-    </a>
-
+      </a>
+    </div>
     <div class="hideme">          
             <div id="adminPicture"><img class="img-responsive center-block" src="images/adminImage.png"/></div>
     </div>
@@ -132,6 +122,8 @@
         <button type="submit" class="btn btn-primary" id="searchButton">Search</button>
       </form>
     </div>
+
+
 
     <div id="calendar">
       <button type="button" class="close">×</button>
@@ -174,158 +166,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    
+    <script src="js/myscripts.js"></script>
 
 
 
     
-
-
-
-    <script>
-    <!--The calendar button opens and closes the calendar slide-->
-    $('#opener').on('click', function() {   
-      var panel = $('#calendar-panel');
-      if (panel.hasClass("visible")) {
-        panel.removeClass('visible').animate({'margin-left':'-350px'});
-      } 
-      else {
-        panel.addClass('visible').animate({'margin-left':'0px'});
-
-    } 
-  
-  });
-    </script>
-
-    <script>
-      <!--Closes the calendar slide when the close button is clicked -->
-      $('#closeButton').on('click', function(){
-        var panel = $('#calendar-panel');
-        panel.removeClass('visible').animate({'margin-left':'-350px'});
-      });
-    </script>
-
-    <script>
-    <!--Closes the navbar on mobile when something is clicked -->
-    $(document).on('click','.navbar-collapse.in',function(e) {
-    if( $(e.target).is('a') ) {
-        $(this).collapse('hide');
-    }
-});</script>
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-      $(function () {
-    $('a[href="#search"]').on('click', function(event) {
-        event.preventDefault();
-        $('#search').addClass('open');
-        $('#calendar').removeClass('open');
-        <!--Line below auto focuses on the text field -->
-        <!--$('#search > form > input[type="search"]').focus();-->
-    });
-    
-    $('#search, #search button.close').on('click keyup', function(event) {
-        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
-            $(this).removeClass('open');
-        }
-    });
-    
-    $('form').submit(function(event) {
-        event.preventDefault();
-
-        var inputValue = document.getElementById('searchInput').value;
-        if (inputValue === "abc"){
-          console.log("True");
-
-        }else{
-          console.log("False");
-        }
-
-
-        console.log(inputValue);
-        
-
-        return true;
-    })
-});
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-       <script>
-      $(function () {
-    $('a[href="#calendar"]').on('click', function(event) {
-        event.preventDefault();
-        $('#calendar').addClass('open');
-        $('#search').removeClass('open');
-        <!--Line below auto focuses on the text field -->
-        <!--$('#calendar > form > input[type="search"]').focus();-->
-    });
-    
-    $('#calendar, #calendar button.close').on('click keyup', function(event) {
-        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
-            $(this).removeClass('open');
-        }
-    });
-    $('form').submit(function(event) {
-        event.preventDefault();
-
-        return true;
-    })
-});
-    
-    </script>
-
-
-
-    
-    <script>
-      $(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-            
-            var bottom_of_object = $(this).position().top + $(this).outerHeight() - 300;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            console.log(bottom_of_object);
-            console.log(bottom_of_window);
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},500);
-                    
-            }
-            
-        }); 
-    
-    });
-  });
-    </script>
-
-    <script>
-    $('#eventSlider').height($(window).height());
-    </script>
 
 
       

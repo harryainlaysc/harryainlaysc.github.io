@@ -4,7 +4,7 @@
   opacity: 0.75;
 }
 body{
-	background-color: white;
+	background-color: #222222;
 }
 
 
@@ -30,14 +30,29 @@ body{
 	position: fixed;
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
     top: 0px;
     right: 0px;
     left: 0px;
 
 }
+/*Changes the opacity and the background color of the navigation bar*/
+.navbar {
+   opacity: 0.98;
+   background: #222222;
+}
 
+
+/* Changes the color of hover for navbar*/
+.navbar-inverse .nav > li > a:hover {
+  color: white;
+}
+
+/*Removes the border at the bottom at the navigation bar*/
+.navbar-inner, .navbar .btn-navbar {
+	border: 0px;
+}
 
 
 #pullToRight{
@@ -63,13 +78,13 @@ body{
 	overflow: hidden;
 	width:100%;
 	
-	background-color: #2e2e2e;
+	background-color: #222222;
 	
 }
 
 #title{
     position: absolute;
-    bottom: 13%;
+    bottom: 9%;
 }
 
 #eventSlider h3{
@@ -79,12 +94,10 @@ body{
 .jumbotron{
 	
     
-    background-color: #2e2e2e;
-
-	
-	font-family: 'Lato', sans-serif;
+    background-color: #222222;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
-    color:white;
+    color: white;
     bottom: -60px;
 
     
@@ -93,9 +106,9 @@ body{
 #dodgeballImages {
 	padding-top: 60px;
 	margin-bottom: -30px;
-	padding-left: 100px;
-	padding-right: 100px;
-	
+	padding-left: 20%;
+	padding-right: 20%;
+
 
 }
 
@@ -116,11 +129,6 @@ body{
 }
 
 
-.boardTitle{
-    
-	text-align: center;
-	padding-top: 50px;
-}
 
 #adminPicture{
 	background-color: #D2d7d3;
