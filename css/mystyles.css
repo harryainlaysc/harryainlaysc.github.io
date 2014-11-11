@@ -39,24 +39,11 @@ body{
 }
 
 
-#calendar-panel {
-    width:350px;
-    height:100%;
-    padding:10px;
-    background: #d6d6d6;
-    margin-left:-350px;
-    
-    
 
-}
-#calendar-panel h2{
-	font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    font-weight: 300;
-
-}
 #pullToRight{
+	float:right;
+}
+.pullToRight{
 	float:right;
 }
 #closeButton{
@@ -103,14 +90,12 @@ body{
     
 
 }
-#personThrowingDodgeball {
+#dodgeballImages {
 	padding-top: 60px;
 	margin-bottom: -30px;
-
-}
-#personThrowingDodgeball2 {
-	padding-top: 60px;
-	margin-bottom: -30px;
+	padding-left: 100px;
+	padding-right: 100px;
+	
 
 }
 
