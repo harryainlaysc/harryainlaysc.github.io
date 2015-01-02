@@ -5,18 +5,7 @@
         $(this).collapse('hide');
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-    
+   
       $(function () {
     $('a[href="#search"]').on('click', function(event) {
         event.preventDefault();
@@ -50,18 +39,6 @@
         return true;
     })
 });
-    
-
-
-
-
-
-
-
-
-
-
-
        
       $(function () {
     $('a[href="#calendar"]').on('click', function(event) {
