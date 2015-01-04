@@ -1,11 +1,90 @@
+//true --> when the button is clicked, it will show the alert message
+var joinButtonAlertOn = true;
+var formsButtonAlertOn = true;
+
+//true = the alert is currently being shown on the screen
+//if one alert is on the screen, disable is before another one is shown
+var joinButtonAlertActive = false;
+var formsButtonAlertActive = false;
+
+function showWarningAlert(type) {
+  if (type == "join" && joinButtonAlertOn == true){
+    //fades in the graduationAlert
+    $("#joinAlert").addClass("in");
+    joinButtonAlertActive = true;
+  }
+  else if (type == "forms" && formsButtonAlertOn == true){
+    $("#formsAlert").addClass("in");
+    formsButtonAlertActive = true;
+  }
+  else {
+    //do nothing - coding error
+    console.log("error1");
+  }
+
+}
+function hideWarningAlert(type){
+  if (type == "join"){
+    $("#joinAlert").removeClass("in");
+    joinButtonAlertActive = false;
+  }
+  else if (type == "forms"){
+    $("#formsAlert").removeClass("in");
+    formsButtonAlertActive = false;
+  }
+  else {
+    //do nothing - coding error
+    console.log("error2");
+  }
+
+}
+
+document.getElementById("joinButton").onclick = function(e) {
+
+    if (formsButtonAlertActive == true){
+      //if the forms button alert is active, disable that one before making this one appear
+      hideWarningAlert("forms");
+      showWarningAlert("join");
+    }
+
+    else if (joinButtonAlertActive == true){
+      //if the graduation button alert is active, make it disappear
+      hideWarningAlert("join");
+    }
+    else{
+      //no alerts are currently on the screen
+      showWarningAlert("join");
+
+    }
+
+
+}
+document.getElementById("formsButton").onclick = function(e) {
+  if (joinButtonAlertActive == true){
+    //if the graduation button alert is active, disable that one before making this one appear
+    hideWarningAlert("join");
+    showWarningAlert("forms");
+  }
+
+  else if (formsButtonAlertActive == true){
+    //if the forms button alert is active, make it disappear
+    hideWarningAlert("forms");
+  }
+  else{
+    //no alerts are currently on the screen
+    showWarningAlert("forms");
+
+  }
+}
+
 
     //Closes the navbar on mobile when something is clicked -->
-    $(document).on('click','.navbar-collapse.in',function(e) {
+$(document).on('click','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') ) {
         $(this).collapse('hide');
     }
 });
-   
+
       $(function () {
     $('a[href="#search"]').on('click', function(event) {
         event.preventDefault();
@@ -14,13 +93,13 @@
         //Line below auto focuses on the text field -->
         $('#search > form > input[type="search"]').focus();
     });
-    
+
     $('#search, #search button.close').on('click keyup', function(event) {
         if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
             $(this).removeClass('open');
         }
     });
-    
+
     $('form').submit(function(event) {
         event.preventDefault();
 
@@ -34,21 +113,22 @@
 
 
         console.log(inputValue);
-        
+
 
         return true;
     })
 });
-       
+
       $(function () {
     $('a[href="#calendar"]').on('click', function(event) {
         event.preventDefault();
         $('#calendar').addClass('open');
         $('#search').removeClass('open');
-        //Line below auto focuses on the text field -->
-        //$('#calendar > form > input[type="search"]').focus();-->
+
+
+
     });
-    
+
     $('#calendar, #calendar button.close').on('click keyup', function(event) {
         if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
             $(this).removeClass('open');
@@ -60,39 +140,36 @@
         return true;
     })
 });
-    
-   
 
 
-    
-    
+
+
       $(document).ready(function() {
 
-    
+
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
-    
+
         /* Check the location of each desired element */
         $('.hideme').each( function(i){
-            
+
             var bottom_of_object = $(this).position().top + $(this).outerHeight() - 150;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
+
             console.log(bottom_of_object);
             console.log(bottom_of_window);
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
-                
+
                 $(this).animate({'opacity':'1'},500);
-                    
+
             }
-            
-        }); 
-    
+
+        });
+
     });
   });
-    
 
-   
+
+
     $('#eventSlider').height($(window).height());
-    

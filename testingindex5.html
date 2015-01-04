@@ -49,11 +49,11 @@
           <ul class="nav navbar-nav navbar-left">
             <li><a href="#calendar">CALENDAR </a></li>
             <li><a href="#">CLUBS</a></li>
-            <li><a href="#">FORMS</a></li>
+            <li><a href="#" id="formsButton">FORMS</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">GRADUATION</a></li>
-            <li><a href="join/">JOIN</a></li>
+            <li><a href="#" id="joinButton">JOIN</a></li>
             <li><a href="#search">SEARCH</a></li>
           </ul>
         </div>
@@ -98,6 +98,18 @@
 
       </a>
     </div>
+
+    <div id="joinAlert" class="alert alert-info fade warningAlert" role="alert">
+      <button id="alertCloseButton" type="button" class="close" aria-label="Close" onclick="hideWarningAlert('join')"><span aria-hidden="true">&times;</span></button>
+      <strong class="text-center">Student Council Applications</strong> are currently closed
+    </div>
+
+    <div id="formsAlert" class="alert alert-warning fade warningAlert" role="alert">
+      <button id="alertCloseButton" type="button" class="close" aria-label="Close" onclick="hideWarningAlert('forms')"><span aria-hidden="true">&times;</span></button>
+      <strong>Forms</strong> Better check yourself, you're not looking too good.
+    </div>
+
+
     <div class="hideme">
             <div id="adminPicture"><img class="img-responsive center-block" src="images/adminImage.png"/></div>
     </div>
@@ -115,6 +127,13 @@
     </div>
     <div class="hideme">
             <div id="tlifePicture"><img class="img-responsive center-block" src="images/tlifeImage.png"/></div>
+    </div>
+
+    <div>
+        <div id="facebookButton" class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="http://placehold.it/64x64" class="img-responsive center-block"/></div>
+        <div id="instagramButton"class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="http://placehold.it/64x64" class="img-responsive center-block"/></div>
+        <div id="twitterButton" class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="http://placehold.it/64x64" class="img-responsive center-block"/></div>
+
     </div>
 
 
@@ -148,14 +167,7 @@
         <h3><span class="label label-primary" id="pulltoLeft">HOMECOMING</span><span class="label label-danger" id="pullToRight">25 November</span></h3>
         <h3><span class="label label-primary" id="pulltoLeft">HOMECOMING</span><span class="label label-danger" id="pullToRight">25 November</span></h3>
         <h3><span class="label label-primary" id="pulltoLeft">HOMECOMING</span><span class="label label-danger" id="pullToRight">25 November</span></h3>
-
-
-
-
-
-
       </div>
-
       <button class="btnCustom btn-warning" id="viewFullCalendarBtn">Full Calendar</button>
     </div>
 
