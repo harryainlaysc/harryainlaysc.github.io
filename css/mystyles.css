@@ -402,11 +402,11 @@ body{
 }
 #facebookButton{
 	position: relative;
-	right: -30em;
+	right: -10em;
 }
 #twitterButton{
 	position: relative;
-	left: -30em;
+	left: -10em;
 }
 
 }
