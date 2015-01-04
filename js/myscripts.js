@@ -78,6 +78,41 @@ document.getElementById("formsButton").onclick = function(e) {
 }
 
 
+function hover(element) {
+
+  var id = element.getAttribute("id");
+
+  if (id == "facebook"){
+    element.setAttribute('src', 'images/facebook_active.png');
+  }
+  else if (id == "instagram"){
+    element.setAttribute('src', 'images/instagram_active.png');
+  }
+  else if (id == "twitter"){
+    element.setAttribute('src', 'images/twitter_active.png');
+  }else{
+    //do nothing - coding error (program shouldn't run this part)
+  }
+  //element.setAttribute('src', 'http://dummyimage.com/100x100/eb00eb/fff');
+}
+function unhover(element) {
+  var id = element.getAttribute("id");
+
+  if (id == "facebook"){
+    element.setAttribute('src', 'images/facebook.png');
+  }
+  else if (id == "instagram"){
+    element.setAttribute('src', 'images/instagram.png');
+  }
+  else if (id == "twitter"){
+    element.setAttribute('src', 'images/twitter.png');
+  }else{
+    //do nothing - coding error (program shouldn't run this part)
+  }
+  //element.setAttribute('src', 'http://dummyimage.com/100x100/eb00eb/fff');
+}
+
+
     //Closes the navbar on mobile when something is clicked -->
 $(document).on('click','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') ) {
@@ -156,8 +191,8 @@ $(document).on('click','.navbar-collapse.in',function(e) {
             var bottom_of_object = $(this).position().top + $(this).outerHeight() - 150;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-            console.log(bottom_of_object);
-            console.log(bottom_of_window);
+            //console.log(bottom_of_object);
+            //console.log(bottom_of_window);
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
 
