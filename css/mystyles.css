@@ -422,11 +422,18 @@ body{
 #facebookButton{
 	position: relative;
 	right: -15em;
-
+	width: 32px;
+	height: 32px;
+}
+#instagramButton{
+	width: 32px;
+	height: 32px;
 }
 #twitterButton{
 	position: relative;
 	left: -15em;
+	width: 32px;
+	height: 32px;
 
 }
 
