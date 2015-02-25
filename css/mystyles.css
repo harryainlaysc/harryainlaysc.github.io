@@ -483,7 +483,8 @@ a:hover{
 		font-size: 20px;
 }
 	.label{
-		font-size: 14px;
+		font-size: 12px;
+		width: 100px;
 
 
 	}
