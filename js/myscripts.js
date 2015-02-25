@@ -11,7 +11,7 @@ var eventsList = [
     ["Culture Fest", "March 25-27"]
 ];
 
-var formsAvailableTRUEorFALSE = true;
+var formsAvailableTRUEorFALSE = false;
 var formsList = [
     ["Leadership Form", "March 5", "http://www.google.com"],
     ["ME to WE", "March 30", "http://metowe.com"]
@@ -20,7 +20,7 @@ var formsList = [
 var studentCouncilApplicationOpenTRUEorFALSE = false;
 var studentCouncilApplicationFormLocation = "http://www.google.com";
 
-
+var navigationBarColour = "#222222"
 
 
 //DO NOT CHANGE ANYTHING BELOW THIS LINE ---------------------------------------------------------------------
@@ -261,7 +261,7 @@ $(function() {
 
 
 $(document).ready(function() {
-
+    document.getElementsByClassName("navbar")[0].style.background = "green";
     document.getElementById("eventTitle").innerHTML = eventTitle;
     document.getElementById("eventSubtitle").innerHTML = eventSubtitle;
 
