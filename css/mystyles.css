@@ -484,8 +484,9 @@ a:hover{
 }
 	.label{
 		font-size: 15px;
-		width: 45%;
+		width: 50%;
 		float: left;
+		padding-bottom: 2px;
 
 
 	}
