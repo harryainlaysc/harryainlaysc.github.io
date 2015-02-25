@@ -20,7 +20,7 @@ var formsList = [
 var studentCouncilApplicationOpenTRUEorFALSE = false;
 var studentCouncilApplicationFormLocation = "http://www.google.com";
 
-var navigationBarColour = "#222222"
+var navigationBarColour = "pink"
 
 
 //DO NOT CHANGE ANYTHING BELOW THIS LINE ---------------------------------------------------------------------
@@ -261,7 +261,7 @@ $(function() {
 
 
 $(document).ready(function() {
-    document.getElementsByClassName("navbar")[0].style.background = "green";
+    document.getElementsByClassName("navbar")[0].style.background = navigationBarColour;
     document.getElementById("eventTitle").innerHTML = eventTitle;
     document.getElementById("eventSubtitle").innerHTML = eventSubtitle;
 
