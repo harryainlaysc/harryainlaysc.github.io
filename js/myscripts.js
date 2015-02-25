@@ -11,7 +11,7 @@ var eventsList = [
     ["Culture Fest", "March 25-27"]
 ];
 
-var formsAvailableTRUEorFALSE = false;
+var formsAvailableTRUEorFALSE = true;
 var formsList = [
     ["Leadership Form", "March 5", "http://www.google.com"],
     ["ME to WE", "March 30", "http://metowe.com"]
