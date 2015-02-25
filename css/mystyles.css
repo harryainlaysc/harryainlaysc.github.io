@@ -470,7 +470,7 @@ a:hover{
 
 	}
 	#viewFullCalendarBtn{
-		margin-bottom: 30px;
+		margin-bottom: -100px;
 	}
 	#calendar .close {
 
@@ -483,10 +483,10 @@ a:hover{
 		font-size: 20px;
 }
 	.label{
-		font-size: 15px;
+		font-size: 14px;
 		width: 50%;
 		float: left;
-		margin-top: 10px;
+		margin-top: 14px;
 
 
 	}
