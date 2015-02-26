@@ -20,7 +20,7 @@ var formsList = [
 var studentCouncilApplicationOpenTRUEorFALSE = false;
 var studentCouncilApplicationFormLocation = "http://www.google.com";
 
-var navigationBarColour = "pink"
+var navigationBarColour = "#222222"
 
 
 //DO NOT CHANGE ANYTHING BELOW THIS LINE ---------------------------------------------------------------------
