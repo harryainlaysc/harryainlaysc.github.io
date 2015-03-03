@@ -8,17 +8,18 @@ var eventClickLink = "#";
 var eventsList = [
     ["Breaking Down the Walls", "March 2-6"],
     ["Anti-Bullying Day", "March 6"],
+    ["Hungry Humans", "March 11"],
     ["Culture Fest", "March 25-27"]
 ];
 
 var formsAvailableTRUEorFALSE = false;
 var formsList = [
-    ["Leadership Form", "March 5", "http://www.google.com"],
-    ["ME to WE", "March 30", "http://metowe.com"]
+    ["Form1", "DueDate1", "Link to go to if person clicks event"],
+    ["Form2", "DueDate2", "Link to go to if person clicks event"]
 ];
 
 var studentCouncilApplicationOpenTRUEorFALSE = false;
-var studentCouncilApplicationFormLocation = "http://www.google.com";
+var studentCouncilApplicationFormLocation = "Link to go to if person clicks JOIN on the main page (link to form)";
 
 var navigationBarColour = "#222222"
 
