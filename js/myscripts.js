@@ -21,7 +21,7 @@ var formsList = [
 var studentCouncilApplicationOpenTRUEorFALSE = false;
 var studentCouncilApplicationFormLocation = "Link to go to if person clicks JOIN on the main page (link to form)";
 
-var navigationBarColour = "#222222"
+var navigationBarColour = "#222222"             //DEFAULT = #222222
 
 
 //DO NOT CHANGE ANYTHING BELOW THIS LINE ---------------------------------------------------------------------
@@ -265,6 +265,10 @@ $(document).ready(function() {
     document.getElementsByClassName("navbar")[0].style.background = navigationBarColour;
     document.getElementById("eventTitle").innerHTML = eventTitle;
     document.getElementById("eventSubtitle").innerHTML = eventSubtitle;
+
+    document.getElementById("facebook").src = "images/facebook.png";
+    document.getElementById("instagram").src = "images/instagram.png";
+    document.getElementById("twitter").src = "images/twitter.png";
 
     //Events List
     for (var i = 0; i < eventsList.length; i++) {
