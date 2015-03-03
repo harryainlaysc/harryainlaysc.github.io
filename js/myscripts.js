@@ -199,7 +199,7 @@ $(function() {
 
         var inputValue = document.getElementById('searchInput').value.toLowerCase();
         if (inputValue === "graduation" || inputValue === "grad") {
-            window.location.href = "http://grad.ainlay.ca";
+            window.location.href = "http://ainlay.ca/grad";
 
         } else if (inputValue === "clubs" || inputValue === "club" || inputValue === "dance" || inputValue === "chess" || inputValue === "me to we") {
             window.location.href = "http://ainlay.ca/students/activities-clubs/";
