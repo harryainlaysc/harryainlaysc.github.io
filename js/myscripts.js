@@ -314,4 +314,4 @@ $(document).ready(function() {
 
 
 
-$('#eventSlider').height($(window).height());
+$('#eventSlider').height($(window).height() + 50);
