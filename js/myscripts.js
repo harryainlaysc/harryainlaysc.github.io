@@ -1,14 +1,12 @@
 //CONFIGURATION
 
 
-var eventTitle = "Breaking Down the Walls";
-var eventSubtitle = "MARCH 2 - MARCH 6";
+var eventTitle = "Hungry Hungry Humans";
+var eventSubtitle = "March 11";
 var eventClickLink = "#";
 
 var eventsList = [
-    ["Breaking Down the Walls", "March 2-6"],
-    ["Anti-Bullying Day", "March 6"],
-    ["Hungry Humans", "March 11"],
+    ["Hungry Hungry Humans", "March 11"],
     ["Culture Fest", "March 25-27"]
 ];
 
