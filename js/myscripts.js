@@ -2,11 +2,11 @@
 
 
 var eventTitle = "Hungry Hungry Humans";
-var eventSubtitle = "March 11";
+var eventSubtitle = "March 18";
 var eventClickLink = "#";
 
 var eventsList = [
-    ["Hungry Hungry Humans", "March 11"],
+    ["Hungry Hungry Humans", "March 18"],
     ["Culture Fest", "March 25-27"]
 ];
 
