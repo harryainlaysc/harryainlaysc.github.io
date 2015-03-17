@@ -1,9 +1,9 @@
 //CONFIGURATION
 
 
-var eventTitle = "Hungry Hungry Humans";
-var eventSubtitle = "March 18";
-var eventClickLink = "#";
+var eventTitle = "Presidential Election";
+var eventSubtitle = "Application Due Marth 27";
+var eventClickLink = "https://docs.google.com/forms/d/1WYYFlvuLAO1KuwicyHnnOYxZAOVRYt7MV3rQudNVdvU/viewform?usp=send_form";
 
 var eventsList = [
     ["Hungry Hungry Humans", "March 18"],
