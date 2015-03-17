@@ -2,7 +2,7 @@
 
 
 var eventTitle = "Presidential Election";
-var eventSubtitle = "Application Due Marth 27";
+var eventSubtitle = "Click for Form - Due March 27";
 var eventClickLink = "https://docs.google.com/forms/d/1WYYFlvuLAO1KuwicyHnnOYxZAOVRYt7MV3rQudNVdvU/viewform?usp=send_form";
 
 var eventsList = [
