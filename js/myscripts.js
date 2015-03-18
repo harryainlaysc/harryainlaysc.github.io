@@ -10,7 +10,7 @@ var eventsList = [
     ["Culture Fest", "March 25-27"]
 ];
 
-var formsAvailableTRUEorFALSE = false;
+var formsAvailableTRUEorFALSE = true;
 var formsList = [
     ["SC President Application", "March 27", "https://docs.google.com/forms/d/1WYYFlvuLAO1KuwicyHnnOYxZAOVRYt7MV3rQudNVdvU/viewform?usp=send_form"]
 ];
