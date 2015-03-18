@@ -12,8 +12,7 @@ var eventsList = [
 
 var formsAvailableTRUEorFALSE = false;
 var formsList = [
-    ["Form1", "DueDate1", "Link to go to if person clicks event"],
-    ["Form2", "DueDate2", "Link to go to if person clicks event"]
+    ["SC President Application", "March 27", "https://docs.google.com/forms/d/1WYYFlvuLAO1KuwicyHnnOYxZAOVRYt7MV3rQudNVdvU/viewform?usp=send_form"]
 ];
 
 var studentCouncilApplicationOpenTRUEorFALSE = false;
