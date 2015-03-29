@@ -1,16 +1,16 @@
 //CONFIGURATION
 
 
-var eventTitle = "Presidential Election";
-var eventSubtitle = "Click for Form - Due March 27";
-var eventClickLink = "https://docs.google.com/forms/d/1WYYFlvuLAO1KuwicyHnnOYxZAOVRYt7MV3rQudNVdvU/viewform?usp=send_form";
+var eventTitle = "Student Council President Election";
+var eventSubtitle = "April 14";
+var eventClickLink = "#";
 
 var eventsList = [
-    ["Hungry Hungry Humans", "March 18"],
-    ["Culture Fest", "March 25-27"]
+    ["SC President Speeches", "April 13"],
+    ["SC President Election", "April 14"]
 ];
 
-var formsAvailableTRUEorFALSE = true;
+var formsAvailableTRUEorFALSE = false;
 var formsList = [
     ["SC President Application", "March 27", "https://docs.google.com/forms/d/1WYYFlvuLAO1KuwicyHnnOYxZAOVRYt7MV3rQudNVdvU/viewform?usp=send_form"]
 ];
