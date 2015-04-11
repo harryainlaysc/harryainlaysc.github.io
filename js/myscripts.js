@@ -10,9 +10,11 @@ var eventsList = [
     ["SC President Election", "April 14"]
 ];
 
-var formsAvailableTRUEorFALSE = false;
+var formsAvailableTRUEorFALSE = true;
 var formsList = [
-    ["SC President Application", "March 27", "https://docs.google.com/forms/d/1WYYFlvuLAO1KuwicyHnnOYxZAOVRYt7MV3rQudNVdvU/viewform?usp=send_form"]
+    ["Exec. Assistant / VP", "April 14", "https://drive.google.com/uc?export=download&id=0B7yOvdmsLVw5MzAwaGJYY3E1OVh2REZoRmZTZmRSRXRGZ0Fz"],
+    ["Grade 11 Rep", "April 22", "https://drive.google.com/uc?export=download&id=0B7yOvdmsLVw5RFhNVU9OdHVzNkI5Smp2MFJwOE5PREVuYmV3"],
+    ["Grade 12 Rep", "April 22", "https://drive.google.com/uc?export=download&id=0B7yOvdmsLVw5MzAwaGJYY3E1OVh2REZoRmZTZmRSRXRGZ0Fz"]
 ];
 
 var studentCouncilApplicationOpenTRUEorFALSE = false;
