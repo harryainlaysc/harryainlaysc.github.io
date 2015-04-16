@@ -1,16 +1,17 @@
 //CONFIGURATION
 
 
-var eventTitle = "Student Council President Election";
-var eventSubtitle = "April 14";
+var eventTitle = "Leadership Seminar";
+var eventSubtitle = "Saturday, April 25";
 var eventClickLink = "#";
 
 var eventsList = [
-    ["SC President Speeches", "April 13"],
-    ["SC President Election", "April 14"]
+    ["Leadership Seminar", "April 25"],
+    ["SC Rep. Selection", "April 28-29"],
+    ["A Walk Around the World", "May 27"]
 ];
 
-var formsAvailableTRUEorFALSE = true;
+var formsAvailableTRUEorFALSE = false;
 var formsList = [
     ["Exec. Assistant / VP", "April 14", "https://drive.google.com/uc?export=download&id=0B7yOvdmsLVw5MzAwaGJYY3E1OVh2REZoRmZTZmRSRXRGZ0Fz"],
     ["Grade 11 Rep", "April 22", "https://drive.google.com/uc?export=download&id=0B7yOvdmsLVw5RFhNVU9OdHVzNkI5Smp2MFJwOE5PREVuYmV3"],
