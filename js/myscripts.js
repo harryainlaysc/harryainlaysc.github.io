@@ -1,12 +1,11 @@
 //CONFIGURATION
 
 
-var eventTitle = "Leadership Seminar";
-var eventSubtitle = "Saturday, April 25";
+var eventTitle = "A Walk Around the World";
+var eventSubtitle = "Wednesday, May 27";
 var eventClickLink = "#";
 
 var eventsList = [
-    ["Leadership Seminar", "April 25"],
     ["SC Rep. Selection", "April 28-29"],
     ["A Walk Around the World", "May 27"]
 ];
