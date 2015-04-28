@@ -264,6 +264,7 @@ $(document).ready(function() {
     document.getElementsByClassName("navbar")[0].style.background = navigationBarColour;
     document.getElementById("eventTitle").innerHTML = eventTitle;
     document.getElementById("eventSubtitle").innerHTML = eventSubtitle;
+    document.getElementById("eventSliderClickZone").href = eventClickLink;
 
     document.getElementById("facebook").src = "images/facebook.png";
     document.getElementById("instagram").src = "images/instagram.png";
