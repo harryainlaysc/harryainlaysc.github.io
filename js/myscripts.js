@@ -17,8 +17,8 @@ var formsList = [
     ["Grade 12 Rep", "April 22", "https://drive.google.com/uc?export=download&id=0B7yOvdmsLVw5Vm1OM0E0aUF1ZEZoVlo2VDlSWkNTSG1vRjU0"]
 ];
 
-var studentCouncilApplicationOpenTRUEorFALSE = false;
-var studentCouncilApplicationFormLocation = "Link to go to if person clicks JOIN on the main page (link to form)";
+var studentCouncilApplicationOpenTRUEorFALSE = True;
+var studentCouncilApplicationFormLocation = "https://drive.google.com/file/d/0B1cysqXxoPvxLTFuQjRkWEZITVU/view?usp=sharing";
 
 var navigationBarColour = "#222222"             //DEFAULT = #222222
 
