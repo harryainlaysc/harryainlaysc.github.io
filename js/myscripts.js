@@ -1,24 +1,23 @@
 //CONFIGURATION
 
 
-var eventTitle = "A Walk Around the World";
-var eventSubtitle = "Wednesday, May 27";
-var eventClickLink = "#";
+var eventTitle = "Gr.10 Student Council Applications";
+var eventSubtitle = "Friday, May 22";
+var eventClickLink = "https://drive.google.com/uc?export=download&id=0B1cysqXxoPvxLTFuQjRkWEZITVU";
 
 var eventsList = [
-    ["SC Rep. Selection", "April 28-29"],
+    ["Grade 10 SC Rep Selection", "May 22"],
     ["A Walk Around the World", "May 27"]
 ];
 
-var formsAvailableTRUEorFALSE = false;
+var formsAvailableTRUEorFALSE = true;
 var formsList = [
-    ["Exec. Assistant / VP", "April 14", "https://drive.google.com/uc?export=download&id=0B7yOvdmsLVw5MzAwaGJYY3E1OVh2REZoRmZTZmRSRXRGZ0Fz"],
-    ["Grade 11 Rep", "April 22", "https://drive.google.com/uc?export=download&id=0B7yOvdmsLVw5RFhNVU9OdHVzNkI5Smp2MFJwOE5PREVuYmV3"],
-    ["Grade 12 Rep", "April 22", "https://drive.google.com/uc?export=download&id=0B7yOvdmsLVw5Vm1OM0E0aUF1ZEZoVlo2VDlSWkNTSG1vRjU0"]
+    ["Gr. 10 SC Application", "May 22", "https://drive.google.com/uc?export=download&id=0B1cysqXxoPvxLTFuQjRkWEZITVU"],
+   
 ];
 
 var studentCouncilApplicationOpenTRUEorFALSE = true;
-var studentCouncilApplicationFormLocation = "https://docs.google.com/document/d/1xTJ-8pJcNpkVeRBdzpMiqmA_-nQ-POMVc5c2EoQ4Xyw/export?format=pdf";
+var studentCouncilApplicationFormLocation = "https://drive.google.com/uc?export=download&id=0B1cysqXxoPvxLTFuQjRkWEZITVU";
 
 var navigationBarColour = "#222222"             //DEFAULT = #222222
 
