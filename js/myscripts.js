@@ -7,7 +7,8 @@ var eventClickLink = "https://drive.google.com/uc?export=download&id=0B1cysqXxoP
 
 var eventsList = [
     ["Grade 10 SC Rep Selection", "May 22"],
-    ["A Walk Around the World", "May 27"]
+    ["A Walk Around the World", "May 27"],
+    ["Farewell Frosty", "June 11"]
 ];
 
 var formsAvailableTRUEorFALSE = true;
