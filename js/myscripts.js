@@ -22,6 +22,8 @@ var studentCouncilApplicationFormLocation = "https://drive.google.com/uc?export=
 
 var navigationBarColour = "#222222"             //DEFAULT = #222222
 
+var candidatesButtonVisible = false;
+var mediaButtonVisible = false;
 
 //DO NOT CHANGE ANYTHING BELOW THIS LINE ---------------------------------------------------------------------
 
@@ -269,7 +271,21 @@ $(document).ready(function() {
     document.getElementById("facebook").src = "images/facebook.png";
     document.getElementById("instagram").src = "images/instagram.png";
     document.getElementById("twitter").src = "images/twitter.png";
-
+    //Candidates / media button
+    if (candidatesButtonVisible){
+       console.log("cow");
+    }else{
+        //make invisible
+        $("#candidatesButton").remove();
+    }
+    
+    if (mediaButtonVisible){
+        console.log("cow");
+    }
+    else{
+        //make invisible
+        $("#mediaButton").remove();
+    }
     //Events List
     for (var i = 0; i < eventsList.length; i++) {
         document.getElementById(eventName_identifier[i]).innerHTML = eventsList[i][0];
