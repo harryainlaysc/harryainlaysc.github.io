@@ -2,12 +2,11 @@
 
 
 var eventTitle = "Gr.10 Student Council Applications";
-var eventSubtitle = "Friday, May 22";
+var eventSubtitle = "Thursday, June 04";
 var eventClickLink = "https://drive.google.com/uc?export=download&id=0B1cysqXxoPvxLTFuQjRkWEZITVU";
 
 var eventsList = [
-    ["Grade 10 SC Rep Selection", "May 22"],
-    ["A Walk Around the World", "May 27"],
+    ["Grade 10 SC Rep Selection", "June 04"],
     ["Farewell Frosty", "June 11"]
 ];
 
