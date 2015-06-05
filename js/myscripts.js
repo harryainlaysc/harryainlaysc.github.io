@@ -3,20 +3,19 @@
 
 var eventTitle = "Gr.10 Student Council Applications";
 var eventSubtitle = "Thursday, June 04";
-var eventClickLink = "https://drive.google.com/uc?export=download&id=0B1cysqXxoPvxLTFuQjRkWEZITVU";
+var eventClickLink = "Place URL HERE";
 
 var eventsList = [
-    ["Grade 10 SC Rep Selection", "June 04"],
     ["Farewell Frosty", "June 11"]
 ];
 
-var formsAvailableTRUEorFALSE = true;
+var formsAvailableTRUEorFALSE = false;
 var formsList = [
     ["Gr. 10 SC Application", "May 22", "https://drive.google.com/uc?export=download&id=0B1cysqXxoPvxLTFuQjRkWEZITVU"],
    
 ];
 
-var studentCouncilApplicationOpenTRUEorFALSE = true;
+var studentCouncilApplicationOpenTRUEorFALSE = false;
 var studentCouncilApplicationFormLocation = "https://drive.google.com/uc?export=download&id=0B1cysqXxoPvxLTFuQjRkWEZITVU";
 
 var navigationBarColour = "#222222"             //DEFAULT = #222222
