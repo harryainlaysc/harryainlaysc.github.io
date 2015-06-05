@@ -3,7 +3,7 @@
 
 var eventTitle = "Gr.10 Student Council Applications";
 var eventSubtitle = "Thursday, June 04";
-var eventClickLink = "Place URL HERE";
+var eventClickLink = "false";
 
 var eventsList = [
     ["Farewell Frosty", "June 11"]
