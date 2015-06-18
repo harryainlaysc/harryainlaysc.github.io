@@ -1,12 +1,12 @@
 //CONFIGURATION
 
 
-var eventTitle = "Gr.10 Student Council Applications";
-var eventSubtitle = "Thursday, June 04";
+var eventTitle = "Link Crew Day";
+var eventSubtitle = "Wednesday, September 02";
 var eventClickLink = "false";
 
 var eventsList = [
-    ["Farewell Frosty", "June 11"]
+    ["Link Crew", "September 02"]
 ];
 
 var formsAvailableTRUEorFALSE = false;
