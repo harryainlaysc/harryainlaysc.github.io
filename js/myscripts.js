@@ -11,7 +11,7 @@ var eventsList = [
     ["Titan Trivia", "September 09"],
     ["Welcome Back BBQ", "September 15"],
     ["Hungry Humans", "September 16"],
-    ["Homecoming", "September 17"]
+    ["Homecoming", "September 18"]
     
 ];
 
