@@ -9,8 +9,8 @@ var eventsList = [
     ["Link Crew", "September 02"],
     ["Musical Chairs", "September 08"],
     ["Titan Trivia", "September 09"],
-    ["Welcome Back BBQ", "September 15"],
-    ["Hungry Humans", "September 16"],
+    ["Hungry Humans", "September 10"],
+    ["Welcome Back BBQ", "September 16"],
     ["Homecoming", "September 18"]
     
 ];
