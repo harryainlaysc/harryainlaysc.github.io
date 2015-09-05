@@ -6,7 +6,6 @@ var eventSubtitle = "Wednesday, September 02";
 var eventClickLink = "false";
 
 var eventsList = [
-    ["Link Crew", "September 02"],
     ["Musical Chairs", "September 08"],
     ["Titan Trivia", "September 09"],
     ["Hungry Humans", "September 10"],
