@@ -3,7 +3,7 @@
 
 var eventTitle = "Link Crew Day";
 var eventSubtitle = "Wednesday, September 02";
-var eventClickLink = "false";
+var eventClickLink = "#";
 
 var eventsList = [
     ["Link Crew", "September 02"],
