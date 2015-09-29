@@ -1,17 +1,13 @@
 //CONFIGURATION
 
 
-var eventTitle = "Link Crew Day";
-var eventSubtitle = "Wednesday, September 02";
+var eventTitle = "Oktoberfest";
+var eventSubtitle = "Wednesday, October 07";
 var eventClickLink = "#";
 
 var eventsList = [
-    ["Link Crew", "September 02"],
-    ["Musical Chairs", "September 08"],
-    ["Titan Trivia", "September 09"],
-    ["Hungry Humans", "September 10"],
-    ["Welcome Back BBQ", "September 16"],
-    ["Homecoming", "September 18"]
+    ["Oktoberfest", "October 07"]
+   
     
 ];
 
