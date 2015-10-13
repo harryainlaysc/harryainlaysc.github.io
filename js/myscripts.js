@@ -6,7 +6,10 @@ var eventSubtitle = "Oct 28th-Oct 30th";
 var eventClickLink = "#";
 
 var eventsList = [
-    ["Oktoberfest", "October 07"]
+    ["Oktoberfest", "October 07"],
+    ["Extreme Trick or Treat", "October 28"],
+    ["Witch Toss", "October 29"],
+    ["Costume Contest", "October 30"]
    
     
 ];
