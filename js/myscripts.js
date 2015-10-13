@@ -2,7 +2,7 @@
 
 
 var eventTitle = "Scary Ainlay";
-var eventSubtitle = "October 28th-October 30th";
+var eventSubtitle = "Oct 28th-Oct 30th";
 var eventClickLink = "#";
 
 var eventsList = [
