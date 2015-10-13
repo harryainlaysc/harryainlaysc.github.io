@@ -1,8 +1,8 @@
 //CONFIGURATION
 
 
-var eventTitle = "Oktoberfest";
-var eventSubtitle = "Wednesday, October 07";
+var eventTitle = "Scary Ainlay";
+var eventSubtitle = "October 28th - October 30th";
 var eventClickLink = "#";
 
 var eventsList = [
