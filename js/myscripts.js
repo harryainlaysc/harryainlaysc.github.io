@@ -8,7 +8,7 @@ var eventClickLink = "#";
 var eventsList = [
     ["Oktoberfest", "October 07"],
     ["Extreme Trick or Treat", "October 28"],
-    ["Witch Toss", "October 29"],
+    ["Crazy Costume Chase", "October 29"],
     ["Costume Contest", "October 30"]
    
     
