@@ -16,8 +16,7 @@ var eventsList = [
 
 var formsAvailableTRUEorFALSE = false;
 var formsList = [
-    ["Dodgeball Player Applications", "Due November 9", "https://drive.google.com/uc?export=download&id=1ajtyBs1HM4XPg0l5DVbjigoJ8LlZo-jmFtXIWrPX-hM
-"],
+    ["Dodgeball Player Applications", "Due November 9", "https://drive.google.com/uc?export=download&id=1ajtyBs1HM4XPg0l5DVbjigoJ8LlZo-jmFtXIWrPX-hM"],
    
 ];
 
