@@ -1,8 +1,8 @@
 //CONFIGURATION
 
 
-var eventTitle = "Scary Ainlay";
-var eventSubtitle = "Oct 28th-Oct 30th";
+var eventTitle = "Dodgeball 2015";
+var eventSubtitle = "November 19th - December 4th";
 var eventClickLink = "#";
 
 var eventsList = [
