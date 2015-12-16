@@ -1,8 +1,8 @@
 //CONFIGURATION
 
 
-var eventTitle = "Dodgeball 2015";
-var eventSubtitle = "November 19th - December 4th";
+var eventTitle = "Holiday Week";
+var eventSubtitle = "December 14th - December 18th";
 var eventClickLink = "#";
 
 var eventsList = [
