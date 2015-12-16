@@ -6,10 +6,10 @@ var eventSubtitle = "November 19th - December 4th";
 var eventClickLink = "#";
 
 var eventsList = [
-    ["Oktoberfest", "October 07"],
-    ["Crazy Costume Chase", "October 28"],
-    ["Extreme Trick or Treat", "October 29"],
-    ["Costume Contest", "October 30"]
+    ["GSA ", "December 16"],
+    ["Mitten Unwrapping", "December 17"],
+    ["Holiday Week Spirit Day", "December 18"],
+    ["#", "#"]
    
     
 ];
