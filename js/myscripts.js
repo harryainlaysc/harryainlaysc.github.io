@@ -6,10 +6,8 @@ var eventSubtitle = "December 14th - December 18th";
 var eventClickLink = "#";
 
 var eventsList = [
-    ["GSA ", "December 16"],
-    ["Mitten Unwrapping", "December 17"],
-    ["Holiday Week Spirit Day", "December 18"],
-    ["#", "#"]
+    ["Warm Pajama Day", "January 6, 2015"]
+   
    
     
 ];
