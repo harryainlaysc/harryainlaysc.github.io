@@ -6,7 +6,8 @@ var eventSubtitle = "February 2nd - February 5th";
 var eventClickLink = "#";
 
 var eventsList = [
-    ["Warm Pajama Day", "January 6, 2015"]
+    ["Warm Pajama Day", "January 6, 2015"],
+    ["Bring Your Own Banana", "February 3, 2015"]
    
    
     
