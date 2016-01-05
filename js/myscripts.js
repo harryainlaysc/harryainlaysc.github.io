@@ -1,8 +1,8 @@
 //CONFIGURATION
 
 
-var eventTitle = "Holiday Week";
-var eventSubtitle = "December 14th - December 18th";
+var eventTitle = "Welcome Back Week Sem 2";
+var eventSubtitle = "February 2nd - February 5th";
 var eventClickLink = "#";
 
 var eventsList = [
