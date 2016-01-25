@@ -6,7 +6,7 @@ var eventSubtitle = "February 3rd";
 var eventClickLink = "#";
 
 var eventsList = [
-    ["Welcome Back Week", "February 2 - 5"],
+    ["Welcome Back Week", "February 2-5"],
     ["Musical Chairs", "February 2"],
     ["Bring Your Own Banana", "February 3"],
     ["Anti-Bullying Day", "February 24"],
