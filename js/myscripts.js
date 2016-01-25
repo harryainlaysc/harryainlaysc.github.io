@@ -7,10 +7,11 @@ var eventClickLink = "#";
 
 var eventsList = [
     ["Welcome Back Week", "February 2 - 5"],
-    ["Bring Your Own Banana", "February 3"]
+    ["Musical Chairs", "February 2"],
+    ["Bring Your Own Banana", "February 3"],
+    ["Anti-Bullying Day", "February 24"],
+    ["Tournament of The Titans", "March 1-11"]
    
-   
-    
 ];
 
 var formsAvailableTRUEorFALSE = true;
