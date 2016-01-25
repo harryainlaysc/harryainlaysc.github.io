@@ -1,13 +1,13 @@
 //CONFIGURATION
 
 
-var eventTitle = "Welcome Back Week Sem 2";
-var eventSubtitle = "February 2nd - February 5th";
+var eventTitle = "Bring Your Own Banana";
+var eventSubtitle = "February 3rd";
 var eventClickLink = "#";
 
 var eventsList = [
-    ["Warm Pajama Day", "January 6, 2015"],
-    ["Bring Your Own Banana", "February 3, 2015"]
+    ["Welcome Back Week", "February 2 - 5"],
+    ["Bring Your Own Banana", "February 3"]
    
    
     
