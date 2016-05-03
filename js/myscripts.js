@@ -20,7 +20,7 @@ var formsList = [
    
 ];
 
-var studentCouncilApplicationOpenTRUEorFALSE = false;
+var studentCouncilApplicationOpenTRUEorFALSE = true;
 var studentCouncilApplicationFormLocation = "https://drive.google.com/uc?export=download&id=0B1cysqXxoPvxLTFuQjRkWEZITVU";
 
 var navigationBarColour = "#222222"             //DEFAULT = #222222
