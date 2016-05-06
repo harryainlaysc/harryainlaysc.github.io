@@ -1,7 +1,7 @@
 //CONFIGURATION
 
 
-var eventTitle = "Bring Your Own Banana";
+var eventTitle = "Grade 10's Click Join to Access SC Applications";
 var eventSubtitle = "February 3rd";
 var eventClickLink = "#";
 
