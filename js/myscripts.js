@@ -1,16 +1,16 @@
 //CONFIGURATION
 
 
-var eventTitle = "Grade 10's Click Join to Access SC Applications";
-var eventSubtitle = "February 3rd";
+var eventTitle = "Grade 9's Click Join to Access SC Applications";
+var eventSubtitle = "Interviews on May 25 and 26";
 var eventClickLink = "#";
 
 var eventsList = [
-    ["Welcome Back Week", "February 2-5"],
-    ["Musical Chairs", "February 2"],
-    ["Bring Your Own Banana", "February 3"],
-    ["Anti-Bullying Day", "February 24"],
-    ["Tournament of The Titans", "March 1-11"]
+    ["Grade Rep Interviews", "May 25-26"],
+    ["Last SC Event", "June 3"],
+    ["#", "#"],
+    ["#", "#"],
+    ["#", "#"],
    
 ];
 
