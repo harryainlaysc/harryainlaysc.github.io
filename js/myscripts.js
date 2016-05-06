@@ -1,7 +1,7 @@
 //CONFIGURATION
 
 
-var eventTitle = "Grade 9's Click Join to Access SC Applications";
+var eventTitle = "Grade 9's Click Join at the Top Right to Access SC Applications";
 var eventSubtitle = "Interviews on May 25 and 26";
 var eventClickLink = "#";
 
