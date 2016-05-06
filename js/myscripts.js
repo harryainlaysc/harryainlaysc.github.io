@@ -8,9 +8,7 @@ var eventClickLink = "#";
 var eventsList = [
     ["Grade Rep Interviews", "May 25-26"],
     ["Last SC Event", "June 3"],
-    ["#", "#"],
-    ["#", "#"],
-    ["#", "#"],
+
    
 ];
 
