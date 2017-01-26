@@ -1,14 +1,14 @@
 //CONFIGURATION
 
 
-var eventTitle = "Scary Ainlay";
-var eventSubtitle = "October 26-31";
+var eventTitle = "Welcome Back Week";
+var eventSubtitle = "Feb 1-3";
 var eventClickLink = "#";
 
 var eventsList = [
-    ["Grade Rep Interviews", "May 25-26"],
-    ["Last SC Event", "June 3"],
-
+    ["Musical Chairs", "Feb 1"],
+    ["Hungry Hungry Humans", "Feb 2"],
+    ["BYOB", "Feb 3"],
    
 ];
 
