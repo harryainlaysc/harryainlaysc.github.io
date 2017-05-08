@@ -19,7 +19,7 @@ var formsList = [
 ];
 
 var studentCouncilApplicationOpenTRUEorFALSE = true;
-var studentCouncilApplicationFormLocation = "https://docs.google.com/document/d/1EptMBGGHpW4pTjOGkMC41cAEo4rGG4u1P-k_G8A6YZU/edit?usp=sharing";
+var studentCouncilApplicationFormLocation = "https://drive.google.com/file/d/0BwPITvvMPkQsVC1QbDctUlJSZE9LZ0xqZjk3YVNxR3hlR3Qw/view?usp=sharing";
 
 var navigationBarColour = "#222222"             //DEFAULT = #222222
 
