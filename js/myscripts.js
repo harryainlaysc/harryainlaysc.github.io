@@ -207,8 +207,8 @@ $(function() {
             window.location.href = "http://ainlay.ca/students/activities-clubs/";
         } else {
             console.log("False");
-            document.getElementById('searchInput').value = "No Results Found!";
-
+//             document.getElementById('searchInput').value = "No Results Found!";
+            window.location.href = "https://i.imgur.com/bI7oXMa.png";
         }
 
         return true;
